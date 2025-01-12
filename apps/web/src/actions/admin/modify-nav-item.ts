@@ -4,6 +4,7 @@ import { z } from "zod";
 import { adminAction } from "@/lib/safe-action";
 import { redisSAdd, redisHSet, removeNavItem } from "@/lib/utils/server/redis";
 import { revalidatePath } from "next/cache";
+import { kv } from "@vercel/kv";
 
 const metadataSchema = z.object({
 	name: z.string().min(1),
