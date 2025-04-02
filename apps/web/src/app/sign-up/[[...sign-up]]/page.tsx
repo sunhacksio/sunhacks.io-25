@@ -17,10 +17,7 @@ export default async function Page() {
 	if (parseRedisBoolean(defaultRegistrationEnabled, true) === true) {
 		return (
 			<main className="flex min-h-screen items-center justify-center">
-				<SignUp
-					afterSignUpUrl={"/register"}
-					afterSignInUrl={"/dash/"}
-				/>
+				<SignUp fallbackRedirectUrl={"/register"} />
 			</main>
 		);
 	}
