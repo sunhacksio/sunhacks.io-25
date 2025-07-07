@@ -10,10 +10,10 @@ interface SendEmailParams {
 export async function sendEmail({ to, subject, html }: SendEmailParams) {
 	// Create an SES client
 	const sesClient = new SESClient({
-		region: env.AWS_REGION, // Replace with your AWS region
+		region: env.AWS_REGION || "", // Replace with your AWS region
 		credentials: {
-			accessKeyId: env.AWS_SES_ACCESS_KEY,
-			secretAccessKey: env.AWS_SES_SECRET_ACCESS_KEY,
+			accessKeyId: env.AWS_SES_ACCESS_KEY || "",
+			secretAccessKey: env.AWS_SES_SECRET_ACCESS_KEY || "",
 		},
 	});
 

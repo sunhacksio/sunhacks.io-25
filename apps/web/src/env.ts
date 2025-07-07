@@ -3,29 +3,27 @@ import { z } from "zod";
 
 export const env = createEnv({
 	server: {
-		CLERK_SECRET_KEY: z.string(),
-		AWS_SES_ACCESS_KEY: z.string(),
-		AWS_SES_SECRET_ACCESS_KEY: z.string(),
-		AWS_REGION: z.string(),
-		AWS_SES_EMAIL_FROM: z.string(),
-		INTERNAL_AUTH_KEY: z.string().min(64, {
-			message: "INTERNAL_AUTH_KEY must be at least 64 characters",
-		}),
-		BOT_API_URL: z.string(),
-		HK_ENV: z.string().min(1),
+		CLERK_SECRET_KEY: z.string().optional(),
+		AWS_SES_ACCESS_KEY: z.string().optional(),
+		AWS_SES_SECRET_ACCESS_KEY: z.string().optional(),
+		AWS_REGION: z.string().optional(),
+		AWS_SES_EMAIL_FROM: z.string().optional(),
+		INTERNAL_AUTH_KEY: z.string().optional(),
+		BOT_API_URL: z.string().optional(),
+		HK_ENV: z.string().optional(),
 		NODE_ENV: z
 			.enum(["development", "test", "production"])
 			.default("development"),
-		CLOUDFLARE_ACCOUNT_ID: z.string(),
-		R2_ACCESS_KEY_ID: z.string(),
-		R2_SECRET_ACCESS_KEY: z.string(),
-		TURSO_AUTH_TOKEN: z.string(),
-		TURSO_DATABASE_URL: z.string(),
-		UPSTASH_REDIS_REST_TOKEN: z.string(),
-		UPSTASH_REDIS_REST_URL: z.string(),
+		CLOUDFLARE_ACCOUNT_ID: z.string().optional(),
+		R2_ACCESS_KEY_ID: z.string().optional(),
+		R2_SECRET_ACCESS_KEY: z.string().optional(),
+		TURSO_AUTH_TOKEN: z.string().optional(),
+		TURSO_DATABASE_URL: z.string().optional(),
+		UPSTASH_REDIS_REST_TOKEN: z.string().optional(),
+		UPSTASH_REDIS_REST_URL: z.string().optional(),
 	},
 	client: {
-		NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: z.string(),
+		NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: z.string().optional(),
 	},
 	experimental__runtimeEnv: {
 		NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY:

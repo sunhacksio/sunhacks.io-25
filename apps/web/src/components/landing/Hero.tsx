@@ -1,56 +1,63 @@
-import Image from "next/image";
-import Link from "next/link";
-import { Button } from "../shadcn/ui/button";
+import { Button } from "@/components/shadcn/ui/button";
 
-export default function Hero() {
-	return (
-		<section className="grid w-full grid-cols-1 overflow-hidden">
-			<div className="relative flex min-h-screen w-full flex-col items-center justify-center">
-				<div className="absolute left-[20%] top-[-30vh] h-[110vh] w-[225px] -translate-x-5 -rotate-[50deg] bg-white opacity-20 blur-3xl"></div>
-				<div className="relative">
-					<div className="absolute h-full w-full rounded-3xl bg-hackathon opacity-10 blur-3xl"></div>
-					<div className="z-10 grid h-min grid-cols-2">
-						<div className="relative">
-							<Image
-								src="/img/logo/hackkit-md.png"
-								alt="HackKit Logo"
-								fill
-								className="object-contain"
-							/>
-						</div>
-						<div className="z-10 flex py-5">
-							<h1 className="text-7xl font-black text-hackathon dark:bg-gradient-to-tl dark:from-hackathon/80 dark:to-white dark:bg-clip-text dark:text-transparent md:text-8xl">
-								Hack
-								<br />
-								Kit
-							</h1>
-						</div>
-					</div>
-					<p className="text-md pl-5 pt-10 text-center font-bold text-muted-foreground">
-						Feature-packed Hackathon managment software{" "}
-						<u>that just works</u>.
-					</p>
-				</div>
-			</div>
-			<div className="absolute top-[80vh] flex w-full flex-wrap items-center justify-center gap-x-2 gap-y-4">
-				<Link href={"https://github.com/acmutsa/hackkit"}>
-					<Button variant={"outline"} size={"lg"}>
-						GitHub
-					</Button>
-				</Link>
-				<Link href={"https://github.com/acmutsa/hackkit"}>
-					<Button variant={"outline"} size={"lg"}>
-						Docs
-					</Button>
-				</Link>
-				<Link href={"https://github.com/acmutsa/hackkit"}>
-					<Button variant={"outline"} size={"lg"}>
-						Channel Log
-					</Button>
-				</Link>
-				<div className="h-0 basis-full" />
-				<div className="max-h-[50px] overflow-hidden"></div>
-			</div>
-		</section>
-	);
-}
+const Hero = () => {
+  return (
+    <section id="hero" className="min-h-screen flex items-center justify-center pt-20 relative">
+      <div className="container mx-auto px-4 text-center animate-fade-in">
+        <div className="mb-8">
+          <div className="text-8xl mb-4 animate-float">☀️</div>
+          <h1 className="font-fredoka font-bold text-6xl md:text-8xl text-primary mb-4">
+            sunhacks
+          </h1>
+          <h2 className="font-fredoka font-semibold text-3xl md:text-4xl text-primary/80 mb-6">
+            2025
+          </h2>
+        </div>
+
+        <div className="mb-8">
+          <p className="text-xl md:text-2xl text-foreground/80 mb-2">
+            Hackathon Sponsorship Prospectus
+          </p>
+          <p className="text-lg md:text-xl text-foreground/70 mb-4">
+            September 27th–28th, 2025
+          </p>
+          <p className="text-lg md:text-xl text-foreground/70 mb-8">
+            Arizona State University
+          </p>
+        </div>
+
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Button
+            size="lg"
+            className="bg-primary hover:bg-primary/90 text-white font-fredoka text-lg px-8 py-4"
+          >
+            Register Now
+          </Button>
+          <Button
+            size="lg"
+            variant="outline"
+            className="border-primary text-primary hover:bg-primary hover:text-white font-fredoka text-lg px-8 py-4"
+          >
+            Sponsor Us
+          </Button>
+          <Button
+            size="lg"
+            variant="ghost"
+            className="text-primary hover:bg-primary/10 font-fredoka text-lg px-8 py-4"
+          >
+            Learn More
+          </Button>
+        </div>
+
+        <div className="mt-16 text-center">
+          <p className="text-foreground/60 mb-4">Where Innovation Meets Summer Vibes</p>
+          <div className="animate-bounce">
+            <span className="text-2xl">🏖️</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

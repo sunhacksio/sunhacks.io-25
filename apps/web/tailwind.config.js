@@ -80,6 +80,7 @@ module.exports = {
 			},
 			fontFamily: {
 				oswald: ["var(--font-oswald)"],
+				fredoka: ["var(--font-fredoka)"],
 			},
 		},
 	},
