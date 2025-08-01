@@ -912,9 +912,7 @@ const c = {
 			Overview: "/admin",
 			Users: "/admin/users",
 			Events: "/admin/events",
-			// Points: "/admin/points", -- commented out until implemented
 			"Hackathon Check-in": "/admin/check-in",
-			Toggles: "/admin/toggles",
 		},
 	},
 	eventTypes: {
@@ -976,7 +974,6 @@ const c = {
 			checked: true,
 		},
 	},
-	maxTeamSize: 4,
 	featureFlags: {
 		core: {
 			requireUsersApproval: false,
