@@ -7,7 +7,7 @@ import Partners from "@/components/landing/Partners";
 import Footer from "@/components/landing/Footer";
 import MLHBadge from "@/components/landing/MLHBadge";
 
-import { Oswald } from "next/font/google";
+import { Oswald, Fredoka } from "next/font/google";
 import WorkWithUs from "@/components/landing/WorkWithUs";
 
 const oswald = Oswald({
@@ -15,9 +15,14 @@ const oswald = Oswald({
 	subsets: ["latin"],
 });
 
+const fredoka = Fredoka({
+	variable: "--font-fredoka",
+	subsets: ["latin"],
+});
+
 export default function Home() {
 	return (
-		<div className={`${oswald.variable} w-full overflow-x-hidden`}>
+		<div className={`${oswald.variable} ${fredoka.variable} w-full overflow-x-hidden`}>
 			<Navbar />
 			<MLHBadge />
 			<main className="overflow-x-hidden">
