@@ -57,6 +57,30 @@ module.exports = {
     				DEFAULT: 'hsl(var(--card))',
     				foreground: 'hsl(var(--card-foreground))'
     			},
+    			sand: {
+    				50: '#fef9ec',
+    				100: '#fcf0ca',
+    				200: '#f8df91',
+    				300: '#f4c95a',
+    				400: '#f0b32a',
+    				500: '#e69a1a',
+    				600: '#cc7a15',
+    				700: '#a35a12',
+    				800: '#7a4310',
+    				900: '#51350e'
+    			},
+    			ocean: {
+    				50: '#f0f9ff',
+    				100: '#e0f2fe',
+    				200: '#bae6fd',
+    				300: '#7dd3fc',
+    				400: '#38bdf8',
+    				500: '#0ea5e9',
+    				600: '#0284c7',
+    				700: '#0369a1',
+    				800: '#075985',
+    				900: '#0c4a6e'
+    			},
     			sidebar: {
     				DEFAULT: 'hsl(var(--sidebar-background))',
     				foreground: 'hsl(var(--sidebar-foreground))',
@@ -90,28 +114,19 @@ module.exports = {
     					height: 0
     				}
     			},
-    			'accordion-down': {
-    				from: {
-    					height: '0'
+    			'float': {
+    				'0%, 100%': {
+    					transform: 'translateY(0px)'
     				},
-    				to: {
-    					height: 'var(--radix-accordion-content-height)'
-    				}
-    			},
-    			'accordion-up': {
-    				from: {
-    					height: 'var(--radix-accordion-content-height)'
-    				},
-    				to: {
-    					height: '0'
+    				'50%': {
+    					transform: 'translateY(-20px)'
     				}
     			}
     		},
     		animation: {
     			'accordion-down': 'accordion-down 0.2s ease-out',
     			'accordion-up': 'accordion-up 0.2s ease-out',
-    			'accordion-down': 'accordion-down 0.2s ease-out',
-    			'accordion-up': 'accordion-up 0.2s ease-out'
+    			'float': 'float 3s ease-in-out infinite'
     		},
     		fontFamily: {
     			oswald: [
@@ -119,6 +134,11 @@ module.exports = {
     			],
     			fredoka: [
     				'var(--font-fredoka)'
+    			],
+    			inter: [
+    				'Inter',
+    				'system-ui',
+    				'sans-serif'
     			]
     		}
     	}
