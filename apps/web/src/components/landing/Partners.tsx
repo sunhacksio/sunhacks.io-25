@@ -1,49 +1,98 @@
-import partnerData from "./partners.json";
-import PartnerCard from "./PartnerCard";
-import Image from "next/image";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/shadcn/ui/card";
+import { Button } from "@/components/shadcn/ui/button";
 
-type Partner = {
-	name: string;
-	logo: string;
-	url: string;
-	tier: string;
+const sponsorTiers = [
+  {
+    name: "Gold Partners",
+    icon: "🏆",
+    color: "from-yellow-400 to-yellow-600",
+    description: "Premium partnership with maximum visibility",
+    benefits: ["Logo on all materials", "Speaking opportunity", "Recruiter access", "Premium booth space"]
+  },
+  {
+    name: "Silver Partners",
+    icon: "🥈",
+    color: "from-gray-300 to-gray-500",
+    description: "Significant presence and engagement opportunities",
+    benefits: ["Logo on website", "Booth space", "Resume access", "Workshop opportunity"]
+  },
+  {
+    name: "Bronze Partners",
+    icon: "🥉",
+    color: "from-orange-400 to-orange-600",
+    description: "Supporting role with brand recognition",
+    benefits: ["Logo on website", "Small booth", "Resume access", "Networking access"]
+  }
+];
+
+const Partners = () => {
+  return (
+    <section id="partners" className="py-20 relative">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="font-fredoka font-bold text-4xl md:text-5xl text-primary mb-6">
+            Our Beach Partners
+          </h2>
+          <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
+            Join us in making waves in the tech community! Become a partner and help students 
+            build the future while enjoying the beach vibes.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
+          {sponsorTiers.map((tier, index) => (
+            <Card key={index} className="bg-white/80 backdrop-blur-sm border-sand-300 hover:shadow-xl transition-all hover:-translate-y-2">
+              <CardHeader className="text-center pb-4">
+                <div className="text-4xl mb-4">{tier.icon}</div>
+                <CardTitle className={`font-fredoka text-xl bg-gradient-to-r ${tier.color} bg-clip-text text-transparent`}>
+                  {tier.name}
+                </CardTitle>
+                <p className="text-sm text-foreground/70 mt-2">
+                  {tier.description}
+                </p>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3">
+                  {tier.benefits.map((benefit, benefitIndex) => (
+                    <div key={benefitIndex} className="flex items-center space-x-2">
+                      <span className="text-tropical-500">✓</span>
+                      <span className="text-sm text-foreground/80">{benefit}</span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        <div className="text-center">
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto border border-sand-300">
+            <h3 className="font-fredoka font-semibold text-2xl text-primary mb-4">
+              Ready to Make Waves?
+            </h3>
+            <p className="text-foreground/80 mb-6">
+              Partner with SunHacks and connect with the brightest student minds in Arizona. 
+              Let's build something amazing together under the desert sun!
+            </p>
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90 text-white font-fredoka text-lg px-8 py-4"
+            >
+              Become a Partner
+            </Button>
+          </div>
+        </div>
+
+        <div className="mt-12 text-center">
+          <div className="flex justify-center items-center space-x-6 text-2xl opacity-60">
+            <span className="animate-float">🏄‍♀️</span>
+            <span className="animate-float" style={{ animationDelay: '0.7s' }}>🌊</span>
+            <span className="animate-float" style={{ animationDelay: '1.4s' }}>🐢</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
-export default async function Partners() {
-	// Christian Walker: Aware of weird bug from 1280px to 1286 px where background dissapears
-	const marathon: Partner = {
-		name: "Marathon",
-		logo: "marathon_logo.svg",
-		url: "https://www.marathonpetroleum.com/",
-		tier: "Title Sponsor",
-	};
-
-	return (
-		<section className="relative flex min-h-screen w-full flex-col items-center justify-center gap-y-10 border-y-2 border-muted-foreground">
-			<div className="flex w-full flex-col items-center justify-center space-y-4">
-				<h1 className="text-center text-4xl font-black md:text-5xl">
-					Partners Sections
-				</h1>
-				<h3 className="px-4 text-center text-lg font-bold md:text-2xl lg:px-0">
-					{
-						"See the Partners Component inside components/landing/Partners for an example"
-					}
-				</h3>
-			</div>
-			{/* Example Code of what our previous partner section looked like */}
-			<h1 className="z-20 text-4xl sm:text-5xl md:text-6xl font-bold font-oswald italic text-[#FEF2E6] text-center pt-7 sm:pb-8">
-        A Huge Thanks To Our Rowdyhacks Partners!
-      </h1>
-
-      <div className="z-20 flex justify-center items-center w-full h-full pt-12">
-        <PartnerCard partner={marathon} is_title={true}/>
-      </div>
-     
-      <div className="z-20 grid place-items-center justify-center grid-flow-row grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-10 lg:gap-12 w-[98%] pt-8 sm:pt-10 md:pt-[3.5rem] lg:pt-[4rem] pb-2 sm:pb-8 lg:pb-12 overflow-y-hidden overflow-x-visible no-scrollbar">
-        {partnerData.partners.map((partner: Partner) => (
-          <PartnerCard key={partner.name} partner={partner} is_title={false} />
-        ))}
-      </div>
-		</section>
-	);
-}
+export default Partners;

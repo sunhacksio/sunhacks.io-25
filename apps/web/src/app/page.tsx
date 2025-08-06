@@ -9,6 +9,7 @@ import MLHBadge from "@/components/landing/MLHBadge";
 
 import { Oswald, Fredoka } from "next/font/google";
 import WorkWithUs from "@/components/landing/WorkWithUs";
+import BeachElements from '@/components/landing/BeachElements';
 
 const oswald = Oswald({
 	variable: "--font-oswald",
@@ -22,15 +23,16 @@ const fredoka = Fredoka({
 
 export default function Home() {
 	return (
-		<div className={`${oswald.variable} ${fredoka.variable} w-full overflow-x-hidden`}>
+		<div className={`${oswald.variable} ${fredoka.variable} w-full overflow-x-hidden min-h-screen relative beach-gradient`}>
 			<Navbar />
 			<MLHBadge />
-			<main className="overflow-x-hidden">
+			<BeachElements />
+			<main className="relative z-10">
 				<Hero />
 
-				{/* <About />
+				<About />
 				<Partners />
-				<WorkWithUs /> */}
+				<WorkWithUs />
 				<Footer />
 			</main>
 		</div>
