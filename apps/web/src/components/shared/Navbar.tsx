@@ -129,7 +129,7 @@ const Navbar = ({ className }: NavbarProps) => {
             className="font-fredoka font-bold text-2xl text-primary cursor-pointer"
             onClick={() => scrollToSection('hero')}
           >
-            ☀️ SunHacks
+            ☀️ sunhacks 
           </div>
 
           {/* Desktop Menu */}
