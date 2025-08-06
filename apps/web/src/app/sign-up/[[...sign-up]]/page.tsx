@@ -6,12 +6,8 @@ import { Button } from "@/components/shadcn/ui/button";
 import Link from "next/link";
 
 export default async function Page() {
-	const [defaultRegistrationEnabled, defaultSecretRegistrationEnabled]: (
-		| string
-		| null
-	)[] = await redisMGet(
+	const [defaultRegistrationEnabled]: (string | null)[] = await redisMGet(
 		"config:registration:registrationEnabled",
-		"config:registration:secretRegistrationEnabled",
 	);
 
 	if (parseRedisBoolean(defaultRegistrationEnabled, true) === true) {
