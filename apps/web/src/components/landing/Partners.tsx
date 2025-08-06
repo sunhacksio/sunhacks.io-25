@@ -31,7 +31,7 @@ export default async function Partners() {
 				</h3>
 			</div>
 			{/* Example Code of what our previous partner section looked like */}
-			{/* <h1 className="z-20 text-4xl sm:text-5xl md:text-6xl font-bold font-oswald italic text-[#FEF2E6] text-center pt-7 sm:pb-8">
+			<h1 className="z-20 text-4xl sm:text-5xl md:text-6xl font-bold font-oswald italic text-[#FEF2E6] text-center pt-7 sm:pb-8">
         A Huge Thanks To Our Rowdyhacks Partners!
       </h1>
 
@@ -43,7 +43,7 @@ export default async function Partners() {
         {partnerData.partners.map((partner: Partner) => (
           <PartnerCard key={partner.name} partner={partner} is_title={false} />
         ))}
-      </div> */}
+      </div>
 		</section>
 	);
 }

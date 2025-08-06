@@ -28,9 +28,9 @@ export default function Home() {
 			<main className="overflow-x-hidden">
 				<Hero />
 
-				<About />
+				{/* <About />
 				<Partners />
-				<WorkWithUs />
+				<WorkWithUs /> */}
 				<Footer />
 			</main>
 		</div>
