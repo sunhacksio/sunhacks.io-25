@@ -97,13 +97,13 @@ const teamMembers = [
 
 const faqs = [
   {
-    question: "What is SunHacks?",
-    answer: "SunHacks is Arizona State University's premier beach-themed hackathon where students come together to build innovative projects in a fun, collaborative environment. It's 24 hours of coding, creativity, and community under the desert sun!",
+    question: "What is sunhacks?",
+    answer: "sunhacks is Arizona State University's premier beach-themed hackathon where students come together to build innovative projects in a fun, collaborative environment. It's 24 hours of coding, creativity, and community under the desert sun!",
     icon: "☀️"
   },
   {
     question: "Who can participate?",
-    answer: "All undergraduate and graduate students are welcome! Whether you're a beginner or an experienced developer, designer, or entrepreneur, there's a place for you at SunHacks. No experience required – just bring your enthusiasm!",
+    answer: "All undergraduate and graduate students are welcome! Whether you're a beginner or an experienced developer, designer, or entrepreneur, there's a place for you at sunhacks. No experience required – just bring your enthusiasm!",
     icon: "🏄‍♂️"
   },
   {
@@ -113,12 +113,12 @@ const faqs = [
   },
   {
     question: "How much does it cost?",
-    answer: "SunHacks is completely FREE for all participants! This includes meals, snacks, workshops, swag, and access to all our beach-themed activities. Just register and show up!",
+    answer: "sunhacks is completely FREE for all participants! This includes meals, snacks, workshops, swag, and access to all our beach-themed activities. Just register and show up!",
     icon: "🆓"
   },
   {
     question: "Can I work on an existing project?",
-    answer: "All projects must be started from scratch at SunHacks. However, you can use existing libraries, frameworks, and APIs. The goal is to build something new during the hackathon timeframe!",
+    answer: "All projects must be started from scratch at sunhacks. However, you can use existing libraries, frameworks, and APIs. The goal is to build something new during the hackathon timeframe!",
     icon: "🚀"
   },
   {
@@ -201,7 +201,7 @@ const WorkWithUs = () => {
               Meet Our Team
             </h2>
             <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
-              The passionate individuals behind SunHacks 2025, working to create an amazing hackathon experience
+              The passionate individuals behind sunhacks 2025, working to create an amazing hackathon experience
             </p>
           </div>
 
@@ -288,7 +288,7 @@ const WorkWithUs = () => {
                 Still have questions?
               </h3>
               <p className="text-foreground/80 mb-4">
-                Don't hesitate to reach out! Our team is here to help make your SunHacks experience amazing.
+                Don't hesitate to reach out! Our team is here to help make your sunhacks experience amazing.
               </p>
               <div className="flex justify-center space-x-4 text-2xl">
                 <span>📧</span>

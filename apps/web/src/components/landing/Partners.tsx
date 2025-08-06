@@ -71,7 +71,7 @@ const Partners = () => {
               Ready to Make Waves?
             </h3>
             <p className="text-foreground/80 mb-6">
-              Partner with SunHacks and connect with the brightest student minds in Arizona. 
+              Partner with sunhacks and connect with the brightest student minds in Arizona. 
               Let's build something amazing together under the desert sun!
             </p>
             <Button 

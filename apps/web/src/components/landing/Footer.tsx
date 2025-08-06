@@ -34,7 +34,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="font-fredoka font-bold text-3xl mb-4 flex items-center">
               <span className="mr-2">☀️</span>
-              SunHacks 2025
+              sunhacks 2025
             </div>
             <p className="text-white/80 mb-4 max-w-md">
               Arizona State University's premier beach-themed hackathon. 
@@ -77,7 +77,7 @@ const Footer = () => {
             <span className="animate-float" style={{ animationDelay: '2s' }}>⛱️</span>
           </div>
           <p className="text-white/60">
-            © 2025 SunHacks. Made with ☀️ in Arizona. All rights reserved.
+            © 2025 sunhacks. Made with ☀️ in Arizona. All rights reserved.
           </p>
         </div>
       </div>

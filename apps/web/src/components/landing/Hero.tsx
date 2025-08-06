@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="mb-8">
           <div className="text-8xl mb-4 animate-float">☀️</div>
           <h1 className="font-fredoka font-bold text-6xl md:text-8xl text-primary mb-4">
-            SunHacks
+            sunhacks
           </h1>
           <h2 className="font-fredoka font-semibold text-3xl md:text-4xl text-primary/80 mb-6">
             2025

@@ -38,11 +38,11 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-fredoka font-bold text-4xl md:text-5xl text-primary mb-6">
-            About SunHacks
+            About sunhacks
           </h2>
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
             Join Arizona's premier beach-themed hackathon where creativity flows like ocean waves! 
-            SunHacks brings together innovative minds to build amazing projects in a fun, 
+            sunhacks brings together innovative minds to build amazing projects in a fun, 
             summer-inspired atmosphere.
           </p>
         </div>
