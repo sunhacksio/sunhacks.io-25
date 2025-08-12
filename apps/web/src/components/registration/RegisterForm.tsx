@@ -307,16 +307,43 @@ export default function RegisterForm({
 
 		let resume: string = c.noResumeProvidedURL;
 		if (uploadedFile) {
-			// test what happens when an error is thrown
-			const uploadedFileUrl = await put(
-				staticUploads.bucketResumeBaseUploadUrl,
-				uploadedFile,
-				{
-					presignHandlerUrl: "/api/upload/resume/register",
-				},
-			);
+			try {
+				// test what happens when an error is thrown
+				const uploadedFileUrl = await put(
+					staticUploads.bucketResumeBaseUploadUrl,
+					uploadedFile,
+					{
+						presignHandlerUrl: "/api/upload/resume/register",
+					},
+				);
 
-			resume = uploadedFileUrl;
+				resume = uploadedFileUrl;
+			} catch (error) {
+				console.error("Resume upload failed:", error);
+				
+				// Try to get more detailed error information
+				let errorMessage = "Resume upload failed. You can still register without a resume, or try again later.";
+				
+				if (error && typeof error === 'object' && 'message' in error) {
+					const errorObj = error as any;
+					console.error("Detailed resume upload error:", {
+						message: errorObj.message,
+						details: errorObj.details,
+						errorType: errorObj.errorType,
+						missingVars: errorObj.missingVars
+					});
+					
+					if (errorObj.missingVars) {
+						errorMessage = `Resume upload failed: Missing configuration (${errorObj.missingVars.join(", ")}). You can still register without a resume.`;
+					} else if (errorObj.details) {
+						errorMessage = `Resume upload failed: ${errorObj.details}. You can still register without a resume.`;
+					}
+				}
+				
+				setErrorMessage(errorMessage);
+				setIsLoading(false);
+				return;
+			}
 		}
 		runRegisterUser({ ...data, resume });
 	}

@@ -38,6 +38,12 @@
     --nav: 0 0% 100%;
 
     --sidebar-background: 0 0% 98%;
+    
+    /* Gradient colors for the hero animation */
+    --gradient-color-1: #ff6b35;
+    --gradient-color-2: #f7931e;
+    --gradient-color-3: #ffd23f;
+    --gradient-color-4: #f7931e;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
     --sidebar-primary-foreground: 0 0% 98%;
@@ -70,6 +76,12 @@
     --hackathon-primary: 30 95% 50%;
     --nav: 222.2 84% 4.9%;
     --sidebar-background: 240 5.9% 10%;
+    
+    /* Gradient colors for the hero animation */
+    --gradient-color-1: #ff6b35;
+    --gradient-color-2: #f7931e;
+    --gradient-color-3: #ffd23f;
+    --gradient-color-4: #f7931e;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
     --sidebar-primary-foreground: 0 0% 100%;

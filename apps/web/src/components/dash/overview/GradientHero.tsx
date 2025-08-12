@@ -5,11 +5,20 @@ import { Gradient } from "@/lib/utils/client/gradient.js";
 
 export default function GradientHero() {
 	useEffect(() => {
-		// Create your instance
-		const gradient = new Gradient();
+		try {
+			// Create your instance
+			const gradient = new Gradient();
 
-		// Call `initGradient` with the selector to your canvas
-		gradient.initGradient("#gradient-canvas");
+			// Call `initGradient` with the selector to your canvas
+			gradient.initGradient("#gradient-canvas");
+		} catch (error) {
+			console.warn("Gradient initialization failed:", error);
+			// Fallback: hide the canvas if gradient fails
+			const canvas = document.getElementById("gradient-canvas");
+			if (canvas) {
+				canvas.style.display = "none";
+			}
+		}
 	}, []);
 
 	return (

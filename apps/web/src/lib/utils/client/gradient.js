@@ -231,7 +231,10 @@ class MiniGl {
 						getDeclaration(name, type, length) {
 							const uniform = this;
 							if (uniform.excludeFrom !== type) {
-								if ("array" === uniform.type)
+								if ("array" === uniform.type) {
+									if (!uniform.value || !uniform.value[0] || typeof uniform.value[0].getDeclaration !== 'function') {
+										return `uniform ${uniform.type} ${name}${length > 0 ? `[${length}]` : ""};`;
+									}
 									return (
 										uniform.value[0].getDeclaration(
 											name,
@@ -240,6 +243,7 @@ class MiniGl {
 										) +
 										`\nconst int ${name}_length = ${uniform.value.length};`
 									);
+								}
 								if ("struct" === uniform.type) {
 									let name_no_prefix = name.replace("u_", "");
 									return (
