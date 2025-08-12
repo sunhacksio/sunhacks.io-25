@@ -20,7 +20,7 @@ const About = () => {
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">🚀</span>
               </div>
-              <CardTitle className="text-xl">Build Amazing Projects</CardTitle>
+              <CardTitle className="text-xl text-foreground">Build Amazing Projects</CardTitle>
               <CardDescription>
                 Turn your ideas into reality with cutting-edge technologies and tools
               </CardDescription>
@@ -37,7 +37,7 @@ const About = () => {
               <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">🤝</span>
               </div>
-              <CardTitle className="text-xl">Network & Collaborate</CardTitle>
+              <CardTitle className="text-xl text-foreground">Network & Collaborate</CardTitle>
               <CardDescription>
                 Connect with fellow developers, mentors, and industry professionals
               </CardDescription>
@@ -54,7 +54,7 @@ const About = () => {
               <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">🎓</span>
               </div>
-              <CardTitle className="text-xl">Learn & Grow</CardTitle>
+              <CardTitle className="text-xl text-foreground">Learn & Grow</CardTitle>
               <CardDescription>
                 Attend workshops, listen to talks, and enhance your skills
               </CardDescription>
@@ -71,7 +71,7 @@ const About = () => {
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">🏆</span>
               </div>
-              <CardTitle className="text-xl">Win Prizes</CardTitle>
+              <CardTitle className="text-xl text-foreground">Win Prizes</CardTitle>
               <CardDescription>
                 Compete for amazing prizes and recognition
               </CardDescription>
@@ -88,7 +88,7 @@ const About = () => {
               <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">🍕</span>
               </div>
-              <CardTitle className="text-xl">Free Food & Swag</CardTitle>
+              <CardTitle className="text-xl text-foreground">Free Food & Swag</CardTitle>
               <CardDescription>
                 Enjoy delicious meals and awesome hackathon swag
               </CardDescription>
@@ -105,7 +105,7 @@ const About = () => {
               <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">💡</span>
               </div>
-              <CardTitle className="text-xl">Innovation Hub</CardTitle>
+              <CardTitle className="text-xl text-foreground">Innovation Hub</CardTitle>
               <CardDescription>
                 Be part of the next big thing in technology
               </CardDescription>

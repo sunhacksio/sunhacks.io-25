@@ -25,7 +25,7 @@ const Hero = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               <div className="bg-card p-6 rounded-lg border shadow-sm">
                 <div className="text-3xl mb-2">📅</div>
-                <h3 className="font-semibold text-lg mb-2">When</h3>
+                <h3 className="font-semibold text-lg mb-2 text-foreground">When</h3>
                 <p className="text-muted-foreground">
                   {c.startDate.toLocaleDateString('en-US', { 
                     weekday: 'long', 
@@ -37,12 +37,12 @@ const Hero = () => {
               </div>
               <div className="bg-card p-6 rounded-lg border shadow-sm">
                 <div className="text-3xl mb-2">📍</div>
-                <h3 className="font-semibold text-lg mb-2">Where</h3>
+                <h3 className="font-semibold text-lg mb-2 text-foreground">Where</h3>
                 <p className="text-muted-foreground">{c.localUniversityName}</p>
               </div>
               <div className="bg-card p-6 rounded-lg border shadow-sm">
                 <div className="text-3xl mb-2">👥</div>
-                <h3 className="font-semibold text-lg mb-2">Capacity</h3>
+                <h3 className="font-semibold text-lg mb-2 text-foreground">Capacity</h3>
                 <p className="text-muted-foreground">{c.rsvpDefaultLimit} Hackers</p>
               </div>
             </div>

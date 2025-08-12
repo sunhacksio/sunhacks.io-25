@@ -20,7 +20,7 @@ const WorkWithUs = () => {
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">🎯</span>
               </div>
-              <CardTitle className="text-xl">Volunteer</CardTitle>
+              <CardTitle className="text-xl text-foreground">Volunteer</CardTitle>
               <CardDescription>
                 Help us run the event smoothly
               </CardDescription>
@@ -40,7 +40,7 @@ const WorkWithUs = () => {
               <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">👨‍🏫</span>
               </div>
-              <CardTitle className="text-xl">Mentor</CardTitle>
+              <CardTitle className="text-xl text-foreground">Mentor</CardTitle>
               <CardDescription>
                 Share your expertise with participants
               </CardDescription>
@@ -60,7 +60,7 @@ const WorkWithUs = () => {
               <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">💼</span>
               </div>
-              <CardTitle className="text-xl">Sponsor</CardTitle>
+              <CardTitle className="text-xl text-foreground">Sponsor</CardTitle>
               <CardDescription>
                 Support the hackathon financially
               </CardDescription>
@@ -79,7 +79,7 @@ const WorkWithUs = () => {
         <div className="text-center">
           <Card className="border-0 shadow-lg bg-card max-w-2xl mx-auto">
             <CardHeader>
-              <CardTitle className="text-2xl">Ready to Get Involved?</CardTitle>
+              <CardTitle className="text-2xl text-foreground">Ready to Get Involved?</CardTitle>
               <CardDescription>
                 We'd love to hear from you and discuss how you can contribute to our hackathon.
               </CardDescription>

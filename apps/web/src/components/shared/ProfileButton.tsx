@@ -39,7 +39,7 @@ export default async function ProfileButton() {
 					</Button>
 				</DropdownMenuTrigger>
 				<DropdownMenuContent
-					className="mt-2 w-32 bg-[rgb(247,240,232)] dark:bg-black sm:w-40 lg:w-52"
+					className="mt-2 w-32 bg-popover sm:w-40 lg:w-52"
 					align="end"
 					forceMount
 				>
@@ -55,7 +55,7 @@ export default async function ProfileButton() {
 							</DropdownMenuItem>
 						</Link>
 						<MobileNavBarLinks />
-						<DropdownMenuSeparator className="bg-[rgb(228,228,231)] dark:bg-[rgb(39,39,42)]" />
+						<DropdownMenuSeparator />
 						<DropdownSwitcher />
 						<Link href={`/bug-report`}>
 							<DropdownMenuItem className="cursor-pointer">
@@ -84,7 +84,7 @@ export default async function ProfileButton() {
 					</Button>
 				</DropdownMenuTrigger>
 				<DropdownMenuContent
-					className="mt-2 w-32 bg-[rgb(247,240,232)] dark:bg-black sm:w-40 lg:w-52"
+					className="mt-2 w-32 bg-popover sm:w-40 lg:w-52"
 					align="end"
 					forceMount
 				>
@@ -101,7 +101,7 @@ export default async function ProfileButton() {
 							</DropdownMenuItem>
 						</Link>
 					</DropdownMenuGroup>
-					<DropdownMenuSeparator className="bg-[rgb(228,228,231)] dark:bg-[rgb(39,39,42)]" />
+					<DropdownMenuSeparator />
 					<DropdownSwitcher />
 					<SignOutButton redirectUrl={"/"}>
 						<DropdownMenuItem className="cursor-pointer hover:!bg-destructive">
@@ -141,7 +141,7 @@ export default async function ProfileButton() {
 						</p>
 					</div>
 				</DropdownMenuLabel>
-				<DropdownMenuSeparator className="bg-[rgb(228,228,231)] dark:bg-[rgb(39,39,42)]" />
+				<DropdownMenuSeparator />
 				<DropdownMenuGroup>
 					<Link href={`/@${user.hackerTag}`}>
 						<DropdownMenuItem className="cursor-pointer">
@@ -163,7 +163,7 @@ export default async function ProfileButton() {
 						</Link>
 					)}
 					<MobileNavBarLinks />
-					<DropdownMenuSeparator className="bg-[rgb(228,228,231)] dark:bg-[rgb(39,39,42)]" />
+					<DropdownMenuSeparator />
 					<Link href={`/bug-report`}>
 						<DropdownMenuItem className="cursor-pointer">
 							Report a Bug
@@ -175,7 +175,7 @@ export default async function ProfileButton() {
 						</DropdownMenuItem>
 					</Link>
 				</DropdownMenuGroup>
-				<DropdownMenuSeparator className="bg-[rgb(228,228,231)] dark:bg-[rgb(39,39,42)]" />
+				<DropdownMenuSeparator />
 				<DropdownSwitcher />
 				<SignOutButton redirectUrl={"/"}>
 					<DropdownMenuItem className="cursor-pointer text-red-500 hover:!bg-destructive hover:text-muted">

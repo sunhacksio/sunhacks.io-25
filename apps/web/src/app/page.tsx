@@ -11,7 +11,7 @@ export default function Home() {
 		<div className="min-h-screen bg-background">
 			<Navbar />
 			<MLHBadge />
-			<main>
+			<main className="pt-16">
 				<Hero />
 				<About />
 				<Partners />
