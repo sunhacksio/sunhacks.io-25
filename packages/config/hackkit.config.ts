@@ -1,4 +1,4 @@
-const defaultTheme = "dark";
+const defaultTheme = "light";
 
 const schoolOptions = [
 	"The University of Texas at San Antonio",
@@ -806,15 +806,16 @@ const softwareExperienceOptions = [
 ] as const;
 
 const c = {
-	hackathonName: "HackKit",
-	itteration: "I",
+	hackathonName: "sunhacks",
+	itteration: "2025",
 	siteUrl: "https://rowdyhacks.org", // Do not have a trailing slash
-	defaultMetaDataDescription: "Your Metadata Description Here",
+	defaultMetaDataDescription:
+		"Arizona State University's premier hackathon where innovation meets collaboration. Join hundreds of developers, designers, and creators for an unforgettable weekend of building amazing projects.",
 	rsvpDefaultLimit: 500,
 	botName: "HackKit",
 	botParticipantRole: "Participant",
 	hackathonTimezone: "America/Chicago",
-	localUniversityName: schoolOptions[0],
+	localUniversityName: "Arizona State University",
 	localUniversitySchoolIDName: "UTSA id (abc123)",
 	localUniversityShortIDMaxLength: 6,
 	registration: {
@@ -934,7 +935,7 @@ const c = {
 		"https://static.acmutsa.org/No%20Resume%20Provided.pdf",
 	// Come in and change this date to whenever the hackathon starts
 	startDate: new Date(new Date(2024, 1, 24).setHours(9)),
-	prettyLocation: "Location of Hackathon",
+	prettyLocation: "Arizona State University",
 	roleBadges: {
 		hacker: {
 			title: "Hacker",

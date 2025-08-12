@@ -1,89 +1,85 @@
-// "use client";
-
-// import { type FunctionComponent, useState } from "react";
-// import Image from "next/image";
-// import Link from "next/link";
-// import { Instagram, Facebook, Twitter, Github, Disc } from "lucide-react";
-// import Discord from "../../../public/img/landing/discord_icon.svg";
-
-// interface Props {
-// 	className?: string;
-// }
-
-// export default function Footer() {
-// 	const [showResources, setShowResources] = useState(false);
-// 	const [showLinks, setShowLinks] = useState(false);
-// 	const [showHackathons, setShowHackathons] = useState(false);
-
-// 	return (
-// 		<section className="flex min-h-[25vh] w-full items-center justify-center border-t-2 border-muted-foreground">
-// 			<h1 className="text-4xl font-black md:text-5xl">
-// 				{" "}
-// 				Your Footer Here
-// 			</h1>
-// 		</section>
-// 	);
-// }
-
+import Link from "next/link";
+import c from "config";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-gradient-to-t from-ocean-600 to-ocean-400 text-white py-16">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
-          <div className="md:col-span-2">
-            <div className="font-fredoka font-bold text-3xl mb-4 flex items-center">
-              <span className="mr-2">☀️</span>
-              sunhacks 2025
+    <footer className="bg-muted/50 border-t">
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Brand */}
+          <div className="col-span-1 md:col-span-2">
+            <div className="flex items-center space-x-2 mb-4">
+              <span className="text-2xl">🏆</span>
+              <h3 className="text-xl font-bold text-foreground">{c.hackathonName}</h3>
             </div>
-            <p className="text-white/80 mb-4 max-w-md">
-              Arizona State University's premier beach-themed hackathon. 
-              Where innovation meets summer vibes!
+            <p className="text-muted-foreground mb-4 max-w-md">
+              {c.defaultMetaDataDescription || "Join us for an incredible hackathon experience where innovation meets collaboration."}
             </p>
-            <div className="flex space-x-4 text-2xl">
-              <span className="cursor-pointer hover:scale-110 transition-transform">📧</span>
-              <span className="cursor-pointer hover:scale-110 transition-transform">🐦</span>
-              <span className="cursor-pointer hover:scale-110 transition-transform">📸</span>
-              <span className="cursor-pointer hover:scale-110 transition-transform">💼</span>
+            <div className="flex space-x-4">
+              <Link href={c.links.discord} className="text-muted-foreground hover:text-foreground transition-colors">
+                Discord
+              </Link>
+              <Link href={c.links.twitter} className="text-muted-foreground hover:text-foreground transition-colors">
+                Twitter
+              </Link>
+              <Link href={c.links.instagram} className="text-muted-foreground hover:text-foreground transition-colors">
+                Instagram
+              </Link>
+              <Link href={c.links.github} className="text-muted-foreground hover:text-foreground transition-colors">
+                GitHub
+              </Link>
             </div>
           </div>
 
+          {/* Quick Links */}
           <div>
-            <h3 className="font-fredoka font-semibold text-lg mb-4">Quick Links</h3>
-            <div className="space-y-2">
-              <div className="text-white/80 hover:text-white cursor-pointer transition-colors">About</div>
-              <div className="text-white/80 hover:text-white cursor-pointer transition-colors">Partners</div>
-              <div className="text-white/80 hover:text-white cursor-pointer transition-colors">Work With Us</div>
-            </div>
+            <h4 className="font-semibold text-foreground mb-4">Quick Links</h4>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/register" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Register
+                </Link>
+              </li>
+              <li>
+                <Link href="/schedule" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Schedule
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link href="/bug-report" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Report Bug
+                </Link>
+              </li>
+            </ul>
           </div>
 
+          {/* Contact */}
           <div>
-            <h3 className="font-fredoka font-semibold text-lg mb-4">Contact</h3>
-            <div className="space-y-2 text-white/80">
-              <div>📍 Arizona State University</div>
-              <div>📅 September 27-28, 2025</div>
-              <div>📧 team@sunhacks.io</div>
-              <div>🐦 @sunhacks</div>
-            </div>
+            <h4 className="font-semibold text-foreground mb-4">Contact</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href={`mailto:${c.issueEmail}`} className="text-muted-foreground hover:text-foreground transition-colors">
+                  {c.issueEmail}
+                </a>
+              </li>
+              <li className="text-muted-foreground">
+                {c.localUniversityName}
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div className="border-t border-white/20 pt-8 text-center">
-          <div className="flex justify-center items-center space-x-6 mb-4 text-xl">
-            <span className="animate-float">🌊</span>
-            <span className="animate-float" style={{ animationDelay: '0.5s' }}>🏖️</span>
-            <span className="animate-float" style={{ animationDelay: '1s' }}>🌴</span>
-            <span className="animate-float" style={{ animationDelay: '1.5s' }}>🐚</span>
-            <span className="animate-float" style={{ animationDelay: '2s' }}>⛱️</span>
-          </div>
-          <p className="text-white/60">
-            © 2025 sunhacks. Made with ☀️ in Arizona. All rights reserved.
+        <div className="border-t mt-8 pt-8 text-center">
+          <p className="text-muted-foreground">
+            © {new Date().getFullYear()} {c.hackathonName}. All rights reserved.
           </p>
         </div>
       </div>
-
-      {/* Wave decoration at bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-ocean-800 to-transparent"></div>
     </footer>
   );
 };

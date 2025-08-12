@@ -1,35 +1,18 @@
 import Navbar from "@/components/shared/Navbar";
 import Hero from "@/components/landing/Hero";
-
 import About from "@/components/landing/About";
-
 import Partners from "@/components/landing/Partners";
 import Footer from "@/components/landing/Footer";
 import MLHBadge from "@/components/landing/MLHBadge";
-
-import { Oswald, Fredoka } from "next/font/google";
 import WorkWithUs from "@/components/landing/WorkWithUs";
-import BeachElements from '@/components/landing/BeachElements';
-
-const oswald = Oswald({
-	variable: "--font-oswald",
-	subsets: ["latin"],
-});
-
-const fredoka = Fredoka({
-	variable: "--font-fredoka",
-	subsets: ["latin"],
-});
 
 export default function Home() {
 	return (
-		<div className={`${oswald.variable} ${fredoka.variable} w-full overflow-x-hidden min-h-screen relative beach-gradient`}>
+		<div className="min-h-screen bg-background">
 			<Navbar />
 			<MLHBadge />
-			<BeachElements />
-			<main className="relative z-10">
+			<main>
 				<Hero />
-
 				<About />
 				<Partners />
 				<WorkWithUs />

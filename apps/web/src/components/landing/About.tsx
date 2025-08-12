@@ -1,100 +1,121 @@
-/* import Balancer from "react-wrap-balancer";
-import Image from "next/image";
-import D1 from "../../../public/img/landing/d1.svg";
-import D2 from "../../../public/img/landing/d2.svg";
-import D3 from "../../../public/img/landing/d3.svg";
-import D4 from "../../../public/img/landing/d4.svg";
-import Dino_Coding from "../../../public/img/landing/dinos_coding.png";
-export default function About() {
-	const d1_stylesheet = {
-		width: "25rem",
-		height: "auto",
-		sm: "width: 30rem",
-	};
-	return (
-		<section
-			className="flex min-h-screen w-full items-center justify-center border-y-2 border-muted-foreground"
-			id="About"
-		>
-			<div className="flex w-full flex-col items-center justify-center">
-				<h1 className="text-center text-4xl font-black md:text-5xl">
-					About Section
-				</h1>
-				<h3 className="px-4 text-center text-lg font-bold md:px-0 md:text-2xl">
-					Introduce the hackathon and its purpose! Make it sound
-					enticing
-				</h3>
-			</div>
-		</section>
-	);
-}
- */
-
-import { Card, CardContent } from "@/components/shadcn/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/shadcn/ui/card";
+import c from "config";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 relative">
+    <section id="about" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-fredoka font-bold text-4xl md:text-5xl text-primary mb-6">
-            About sunhacks
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            About {c.hackathonName}
           </h2>
-          <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
-            Join Arizona's premier beach-themed hackathon where creativity flows like ocean waves! 
-            sunhacks brings together innovative minds to build amazing projects in a fun, 
-            summer-inspired atmosphere.
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            A hackathon where innovation meets collaboration. Join hundreds of developers, designers, and creators for an unforgettable weekend of building amazing projects.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <Card className="bg-white/80 backdrop-blur-sm border-sand-300 hover:shadow-lg transition-shadow">
-            <CardContent className="p-8 text-center">
-              <div className="text-4xl mb-4">🌊</div>
-              <h3 className="font-fredoka font-semibold text-xl text-primary mb-4">
-                Community
-              </h3>
-              <p className="text-foreground/70">
-                Connect with fellow innovators, designers, and developers in a collaborative 
-                beach paradise environment.
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <Card className="border-0 shadow-lg bg-card">
+            <CardHeader>
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">🚀</span>
+              </div>
+              <CardTitle className="text-xl">Build Amazing Projects</CardTitle>
+              <CardDescription>
+                Turn your ideas into reality with cutting-edge technologies and tools
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground">
+                Work with the latest frameworks, APIs, and development tools. From web apps to mobile games, the possibilities are endless.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="bg-white/80 backdrop-blur-sm border-sand-300 hover:shadow-lg transition-shadow">
-            <CardContent className="p-8 text-center">
-              <div className="text-4xl mb-4">💡</div>
-              <h3 className="font-fredoka font-semibold text-xl text-primary mb-4">
-                Innovation
-              </h3>
-              <p className="text-foreground/70">
-                Push the boundaries of technology while soaking up the creative energy 
-                of our beach-themed hackathon experience.
+          <Card className="border-0 shadow-lg bg-card">
+            <CardHeader>
+              <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">🤝</span>
+              </div>
+              <CardTitle className="text-xl">Network & Collaborate</CardTitle>
+              <CardDescription>
+                Connect with fellow developers, mentors, and industry professionals
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground">
+                Meet like-minded individuals, form teams, and build lasting connections in the tech community.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="bg-white/80 backdrop-blur-sm border-sand-300 hover:shadow-lg transition-shadow">
-            <CardContent className="p-8 text-center">
-              <div className="text-4xl mb-4">🎓</div>
-              <h3 className="font-fredoka font-semibold text-xl text-primary mb-4">
-                Student Focus
-              </h3>
-              <p className="text-foreground/70">
-                Designed by students, for students. Learn new skills, win amazing prizes, 
-                and launch your tech career under the Arizona sun.
+          <Card className="border-0 shadow-lg bg-card">
+            <CardHeader>
+              <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">🎓</span>
+              </div>
+              <CardTitle className="text-xl">Learn & Grow</CardTitle>
+              <CardDescription>
+                Attend workshops, listen to talks, and enhance your skills
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground">
+                Participate in technical workshops, listen to industry experts, and gain valuable insights into the latest trends.
               </p>
             </CardContent>
           </Card>
-        </div>
 
-        <div className="mt-16 text-center">
-          <div className="flex justify-center items-center space-x-8 text-3xl">
-            <span className="animate-float">🏖️</span>
-            <span className="animate-float" style={{ animationDelay: '0.5s' }}>🌴</span>
-            <span className="animate-float" style={{ animationDelay: '1s' }}>🐚</span>
-            <span className="animate-float" style={{ animationDelay: '1.5s' }}>⛱️</span>
-          </div>
+          <Card className="border-0 shadow-lg bg-card">
+            <CardHeader>
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">🏆</span>
+              </div>
+              <CardTitle className="text-xl">Win Prizes</CardTitle>
+              <CardDescription>
+                Compete for amazing prizes and recognition
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground">
+                Show off your skills and compete for cash prizes, tech gadgets, and internship opportunities.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="border-0 shadow-lg bg-card">
+            <CardHeader>
+              <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">🍕</span>
+              </div>
+              <CardTitle className="text-xl">Free Food & Swag</CardTitle>
+              <CardDescription>
+                Enjoy delicious meals and awesome hackathon swag
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground">
+                Stay fueled with free meals, snacks, and energy drinks. Plus, take home some amazing hackathon merchandise.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="border-0 shadow-lg bg-card">
+            <CardHeader>
+              <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">💡</span>
+              </div>
+              <CardTitle className="text-xl">Innovation Hub</CardTitle>
+              <CardDescription>
+                Be part of the next big thing in technology
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground">
+                Join a community of innovators and be part of creating solutions that could change the world.
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
