@@ -26,6 +26,15 @@ const nextConfig = {
 			allowedOrigins: ["localhost:3000"],
 		},
 	},
+	// Add rewrites to serve static files
+	async rewrites() {
+		return [
+			{
+				source: '/',
+				destination: '/parallax.html',
+			},
+		];
+	},
 };
 
 if (process.env.NODE_ENV === "development") {
