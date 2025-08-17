@@ -258,6 +258,66 @@ window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 };
 
+/* Hero Text Animation - Simple fade in on page load */
+gsap.fromTo("#hero-text",
+    { opacity: 0, y: 30 },
+    { opacity: 1, y: 0, duration: 1.5, ease: "power2.out" }
+);
+
+/* Add hover effects for the registration button */
+document.addEventListener('DOMContentLoaded', function () {
+    const registerButton = document.querySelector('#hero-text a[href="/register"]');
+    if (registerButton) {
+        registerButton.addEventListener('mouseenter', function () {
+            gsap.to(this, {
+                scale: 1.05,
+                duration: 0.3,
+                ease: "power2.out",
+                boxShadow: "0 6px 20px rgba(0,0,0,0.4)"
+            });
+        });
+
+        registerButton.addEventListener('mouseleave', function () {
+            gsap.to(this, {
+                scale: 1,
+                duration: 0.3,
+                ease: "power2.out",
+                boxShadow: "0 4px 15px rgba(0,0,0,0.3)"
+            });
+        });
+    }
+});
+
+/* What is SunHacks Animation - Staggered fade in */
+gsap.fromTo("#what-is-sunhacks",
+    { opacity: 0, y: 40 },
+    { opacity: 1, y: 0, duration: 1.8, ease: "power2.out", delay: 0.5 }
+);
+
+/* 2025 Announcement Animation - Special entrance */
+gsap.fromTo("#announcement-2025",
+    { opacity: 0, scale: 0.8, y: 50 },
+    { opacity: 1, scale: 1, y: 0, duration: 2, ease: "back.out(1.7)", delay: 1 }
+);
+
+/* Sponsors Animation */
+gsap.fromTo("#sponsors-section",
+    { opacity: 0, y: 40 },
+    { opacity: 1, y: 0, duration: 1.8, ease: "power2.out", delay: 1.5 }
+);
+
+/* Team Animation */
+gsap.fromTo("#team-section",
+    { opacity: 0, y: 40 },
+    { opacity: 1, y: 0, duration: 1.8, ease: "power2.out", delay: 2 }
+);
+
+/* FAQ Animation */
+gsap.fromTo("#faq-section",
+    { opacity: 0, y: 40 },
+    { opacity: 1, y: 0, duration: 1.8, ease: "power2.out", delay: 2.5 }
+);
+
 // function screenToSVG(svg, x, y) {
 //     var pt = svg.createSVGPoint();
 //     pt.x = x;
