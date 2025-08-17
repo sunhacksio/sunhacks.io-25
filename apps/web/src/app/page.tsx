@@ -1,25 +1,7 @@
-import Navbar from "@/components/shared/Navbar";
-import Hero from "@/components/landing/Hero";
-import About from "@/components/landing/About";
-import Partners from "@/components/landing/Partners";
-import Footer from "@/components/landing/Footer";
-import MLHBadge from "@/components/landing/MLHBadge";
-import WorkWithUs from "@/components/landing/WorkWithUs";
+import { redirect } from 'next/navigation';
 
 export default function Home() {
-	return (
-		<div className="min-h-screen bg-background">
-			<Navbar />
-			<MLHBadge />
-			<main className="pt-16">
-				<Hero />
-				<About />
-				<Partners />
-				<WorkWithUs />
-				<Footer />
-			</main>
-		</div>
-	);
+	redirect('/parallax.html');
 }
 
 export const runtime = "edge";
