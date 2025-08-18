@@ -318,6 +318,35 @@ gsap.fromTo("#faq-section",
     { opacity: 1, y: 0, duration: 1.8, ease: "power2.out", delay: 2.5 }
 );
 
+// FAQ Collapsible Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            const toggle = this.querySelector('.faq-toggle');
+            
+            // Close all other answers
+            document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
+                if (otherAnswer !== answer) {
+                    otherAnswer.style.display = 'none';
+                    otherAnswer.previousElementSibling.querySelector('.faq-toggle').textContent = '+';
+                }
+            });
+            
+            // Toggle current answer
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+                toggle.textContent = '−';
+            } else {
+                answer.style.display = 'none';
+                toggle.textContent = '+';
+            }
+        });
+    });
+});
+
 // function screenToSVG(svg, x, y) {
 //     var pt = svg.createSVGPoint();
 //     pt.x = x;
@@ -326,41 +355,50 @@ gsap.fromTo("#faq-section",
 //     return { x: Math.floor(cursorPt.x), y: Math.floor(cursorPt.y) }
 // }
 
-// Mouse Trail with Cute Cactus Shapes
+// Mouse Trail with Small Silver Dots
 let mouseTrail = [];
-const maxTrailLength = 8;
+const maxTrailLength = 2;
+
+// Small silver dots/sparkles
+const sparkles = [
+    { emoji: '·', color: '#E0E0E0' }, // Small dot
+    { emoji: '•', color: '#C0C0C0' }  // Bullet point
+];
 
 function createCactusTrail(x, y) {
-    const cactus = document.createElement('div');
-    cactus.className = 'cactus-trail';
-    cactus.style.left = x + 'px';
-    cactus.style.top = y + 'px';
-    document.body.appendChild(cactus);
+    const sparkleData = sparkles[Math.floor(Math.random() * sparkles.length)];
+    const sparkle = document.createElement('div');
+    sparkle.className = 'cactus-trail';
+    sparkle.textContent = sparkleData.emoji;
+    sparkle.style.left = x + 'px';
+    sparkle.style.top = y + 'px';
+    sparkle.style.color = sparkleData.color;
+    document.body.appendChild(sparkle);
     
     // Add animation class
     setTimeout(() => {
-        cactus.classList.add('animate');
+        sparkle.classList.add('animate');
     }, 10);
     
-    // Remove cactus after animation
+    // Remove sparkle after animation
     setTimeout(() => {
-        if (cactus.parentNode) {
-            cactus.parentNode.removeChild(cactus);
+        if (sparkle.parentNode) {
+            sparkle.parentNode.removeChild(sparkle);
         }
-    }, 600);
+    }, 1200);
     
-    return cactus;
+    return sparkle;
 }
 
 function handleMouseMove(e) {
-    const cactus = createCactusTrail(e.clientX - 10, e.clientY - 10);
-    mouseTrail.push(cactus);
+    const sparkle = createCactusTrail(e.clientX - 4, e.clientY - 4);
+    mouseTrail.push(sparkle);
     
     // Limit trail length
     if (mouseTrail.length > maxTrailLength) {
-        const oldCactus = mouseTrail.shift();
-        if (oldCactus && oldCactus.parentNode) {
-            oldCactus.parentNode.removeChild(oldCactus);
+        const oldSparkle = mouseTrail.shift();
+        if (oldSparkle && oldSparkle.parentNode) {
+            oldSparkle.parentNode.removeChild(oldSparkle);
         }
     }
 }
@@ -370,9 +408,9 @@ document.addEventListener('mousemove', handleMouseMove);
 
 // Clean up trail when mouse leaves window
 document.addEventListener('mouseleave', () => {
-    mouseTrail.forEach(cactus => {
-        if (cactus && cactus.parentNode) {
-            cactus.parentNode.removeChild(cactus);
+    mouseTrail.forEach(sparkle => {
+        if (sparkle && sparkle.parentNode) {
+            sparkle.parentNode.removeChild(sparkle);
         }
     });
     mouseTrail = [];

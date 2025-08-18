@@ -12,16 +12,16 @@
 <body>
 
     <!-- Navigation Bar -->
-    <nav style="position: fixed; top: 0; left: 0; right: 0; z-index: 2000; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-bottom: 2px solid rgba(192, 192, 192, 0.8); padding: 15px 0;">
-        <div style="display: flex; justify-content: center; align-items: center; gap: 40px;">
-            <a href="#home" style="color: white; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 600; transition: all 0.3s ease;">Home</a>
-            <a href="#about" style="color: white; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 600; transition: all 0.3s ease;">About</a>
-            <a href="#tracks" style="color: white; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 600; transition: all 0.3s ease;">Tracks</a>
-            <a href="#schedule" style="color: white; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 600; transition: all 0.3s ease;">Schedule</a>
-            <a href="#sponsor" style="color: white; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 600; transition: all 0.3s ease;">Sponsor</a>
-            <a href="#faq" style="color: white; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 600; transition: all 0.3s ease;">FAQ</a>
-        </div>
-    </nav>
+            <nav style="position: fixed; top: 0; left: 0; right: 0; z-index: 2000; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); padding: 15px 0;">
+            <div style="display: flex; justify-content: center; align-items: center; gap: 40px;">
+                <a href="#hero-text" style="color: white; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 600; transition: all 0.3s ease;">Home</a>
+                <a href="#about" style="color: white; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 600; transition: all 0.3s ease;">About</a>
+                <a href="#tracks" style="color: white; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 600; transition: all 0.3s ease;">Tracks</a>
+                <a href="#schedule" style="color: white; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 600; transition: all 0.3s ease;">Schedule</a>
+                <a href="#sponsor" style="color: white; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 600; transition: all 0.3s ease;">Sponsor</a>
+                <a href="#faq" style="color: white; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 600; transition: all 0.3s ease;">FAQ</a>
+            </div>
+        </nav>
 
     <!-- partial:index.partial.html -->
     <svg class="parallax" viewBox="0 0 750 500" preserveAspectRatio="xMidYMax slice">
@@ -433,7 +433,7 @@
     <div id="hero-text" id="home"
         style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto;">
         <div
-            style="background: rgba(0, 0, 0, 0.3); padding: 50px 70px; border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.4); border: 2px solid rgba(192, 192, 192, 0.8); position: relative; overflow: hidden; backdrop-filter: blur(10px);">
+            style="background: rgba(0, 0, 0, 0.4); padding: 50px 70px; border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 20px rgba(192, 192, 192, 0.3), inset 0 0 20px rgba(192, 192, 192, 0.1); border: 2px solid rgba(192, 192, 192, 0.8); position: relative; overflow: hidden; backdrop-filter: blur(10px);">
             
             <h1
                 style="color: white; font-family: 'Times New Roman', serif; font-size: 48px; font-weight: 900; margin: 0; text-shadow: 2px 2px 0px rgba(0,0,0,0.5);">
@@ -457,7 +457,7 @@
                     style="display: inline-block; background: rgba(255, 255, 255, 0.2); color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 16px; font-weight: 600; transition: all 0.3s ease; border: 2px solid rgba(192, 192, 192, 0.8); backdrop-filter: blur(5px);">
                     Devpost
                 </a>
-                <a href="/sponsor" target="_blank"
+                <a href="mailto:team@sunhacks.io"
                     style="display: inline-block; background: rgba(255, 255, 255, 0.2); color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 16px; font-weight: 600; transition: all 0.3s ease; border: 2px solid rgba(192, 192, 192, 0.8); backdrop-filter: blur(5px);">
                     Sponsor Us
                 </a>
@@ -467,22 +467,22 @@
 
     <!-- About Section -->
     <div id="about"
-        style="position: absolute; top: 150%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto; max-width: 900px;">
+        style="position: absolute; top: 190%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto; max-width: 900px;">
         <div
-            style="background: rgba(0, 0, 0, 0.3); padding: 40px 50px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.4); border: 2px solid rgba(192, 192, 192, 0.8); position: relative; backdrop-filter: blur(10px);">
+            style="background: rgba(0, 0, 0, 0.4); padding: 40px 50px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.4), 0 0 20px rgba(192, 192, 192, 0.3), inset 0 0 20px rgba(192, 192, 192, 0.1); border: 2px solid rgba(192, 192, 192, 0.8); position: relative; backdrop-filter: blur(10px);">
             
             <h2
                 style="color: white; font-family: 'Times New Roman', serif; font-size: 42px; font-weight: 700; margin: 0 0 30px 0; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
-                ABOUT
+                About
             </h2>
             
             <h3
                 style="color: white; font-family: 'Times New Roman', serif; font-size: 28px; font-weight: 600; margin: 0 0 20px 0; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
-                History of SunHacks
+                History of sunhacks
             </h3>
             <p
                 style="color: white; font-family: 'Times New Roman', serif; font-size: 18px; margin: 0 0 30px 0; font-weight: 500; line-height: 1.7; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
-                SunHacks is a yearly hackathon designed to support students in their innovative journeys. Our mission is to provide 
+                sunhacks is a yearly hackathon designed to support students in their innovative journeys. Our mission is to provide 
                 workshops, mentors, community connections, and peers who are motivated to help each other succeed and reach their goals.
             </p>
             
@@ -498,7 +498,7 @@
             
             <h3
                 style="color: white; font-family: 'Times New Roman', serif; font-size: 24px; font-weight: 600; margin: 30px 0 20px 0; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
-                Interested in Working With Us?
+                Interested in working with us?
             </h3>
             <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
                 <a href="/judging" target="_blank"
@@ -519,13 +519,13 @@
 
     <!-- Meet the Team Section -->
     <div id="team-section"
-        style="position: absolute; top: 250%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto; max-width: 1000px;">
+        style="position: absolute; top: 290%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto; max-width: 1000px;">
         <div
-            style="background: rgba(0, 0, 0, 0.3); padding: 45px 55px; border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.4); border: 2px solid rgba(192, 192, 192, 0.8); position: relative; backdrop-filter: blur(10px);">
+            style="background: rgba(0, 0, 0, 0.4); padding: 45px 55px; border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 20px rgba(192, 192, 192, 0.3), inset 0 0 20px rgba(192, 192, 192, 0.1); border: 2px solid rgba(192, 192, 192, 0.8); position: relative; backdrop-filter: blur(10px);">
             
             <h2
                 style="color: white; font-family: 'Times New Roman', serif; font-size: 42px; font-weight: 800; margin: 0 0 40px 0; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
-                MEET the Team
+                Meet the team
             </h2>
             
             <!-- 10 Organizer Pictures Grid -->
@@ -566,19 +566,19 @@
 
     <!-- Tracks Section -->
     <div id="tracks"
-        style="position: absolute; top: 350%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto; max-width: 600px;">
+        style="position: absolute; top: 390%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto; max-width: 600px;">
         <div
-            style="background: rgba(0, 0, 0, 0.3); padding: 40px 50px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.4); border: 2px solid rgba(192, 192, 192, 0.8); position: relative; backdrop-filter: blur(10px);">
+            style="background: rgba(0, 0, 0, 0.4); padding: 40px 50px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.4), 0 0 20px rgba(192, 192, 192, 0.3), inset 0 0 20px rgba(192, 192, 192, 0.1); border: 2px solid rgba(192, 192, 192, 0.8); position: relative; backdrop-filter: blur(10px);">
             
             <h2
                 style="color: white; font-family: 'Times New Roman', serif; font-size: 42px; font-weight: 700; margin: 0 0 30px 0; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
-                TRACKS
+                Tracks
             </h2>
             
             <div style="background: rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 20px; border: 2px solid rgba(192, 192, 192, 0.6);">
                 <p
                     style="color: white; font-family: 'Times New Roman', serif; font-size: 24px; margin: 0; font-weight: 600; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
-                    Coming Soon...
+                    Coming soon...
                 </p>
             </div>
         </div>
@@ -586,39 +586,39 @@
 
     <!-- Schedule Section -->
     <div id="schedule"
-        style="position: absolute; top: 450%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto; max-width: 600px;">
+        style="position: absolute; top: 490%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto; max-width: 600px;">
         <div
-            style="background: rgba(0, 0, 0, 0.3); padding: 40px 50px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.4); border: 2px solid rgba(192, 192, 192, 0.8); position: relative; backdrop-filter: blur(10px);">
+            style="background: rgba(0, 0, 0, 0.4); padding: 40px 50px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.4), 0 0 20px rgba(192, 192, 192, 0.3), inset 0 0 20px rgba(192, 192, 192, 0.1); border: 2px solid rgba(192, 192, 192, 0.8); position: relative; backdrop-filter: blur(10px);">
             
             <h2
                 style="color: white; font-family: 'Times New Roman', serif; font-size: 42px; font-weight: 700; margin: 0 0 30px 0; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
-                SCHEDULE
+                Schedule
             </h2>
             
             <div style="background: rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 20px; border: 2px solid rgba(192, 192, 192, 0.6);">
                 <p
                     style="color: white; font-family: 'Times New Roman', serif; font-size: 24px; margin: 0; font-weight: 600; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
-                    Coming Soon...
+                    Coming soon...
                 </p>
             </div>
-        </div>
-    </div>
+            </div>
+            </div>
 
     <!-- Sponsor Section -->
     <div id="sponsor"
-        style="position: absolute; top: 550%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto; max-width: 600px;">
+        style="position: absolute; top: 590%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto; max-width: 600px;">
         <div
-            style="background: rgba(0, 0, 0, 0.3); padding: 40px 50px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.4); border: 2px solid rgba(192, 192, 192, 0.8); position: relative; backdrop-filter: blur(10px);">
+            style="background: rgba(0, 0, 0, 0.4); padding: 40px 50px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.4), 0 0 20px rgba(192, 192, 192, 0.3), inset 0 0 20px rgba(192, 192, 192, 0.1); border: 2px solid rgba(192, 192, 192, 0.8); position: relative; backdrop-filter: blur(10px);">
             
             <h2
                 style="color: white; font-family: 'Times New Roman', serif; font-size: 42px; font-weight: 700; margin: 0 0 30px 0; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
-                SPONSOR
+                Sponsor
             </h2>
             
             <div style="background: rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 20px; border: 2px solid rgba(192, 192, 192, 0.6);">
                 <p
                     style="color: white; font-family: 'Times New Roman', serif; font-size: 24px; margin: 0; font-weight: 600; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
-                    Coming Soon...
+                    Coming soon...
                 </p>
             </div>
         </div>
@@ -626,97 +626,165 @@
 
     <!-- FAQ Section -->
     <div id="faq-section"
-        style="position: absolute; top: 650%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto; max-width: 900px;">
+        style="position: absolute; top: 690%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto; max-width: 900px;">
         <div
-            style="background: rgba(0, 0, 0, 0.3); padding: 40px 50px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.4); border: 2px solid rgba(192, 192, 192, 0.8); position: relative; backdrop-filter: blur(10px);">
+            style="background: rgba(0, 0, 0, 0.4); padding: 40px 50px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.4), 0 0 20px rgba(192, 192, 192, 0.3), inset 0 0 20px rgba(192, 192, 192, 0.1); border: 2px solid rgba(192, 192, 192, 0.8); position: relative; backdrop-filter: blur(10px);">
             
             <h2
                 style="color: white; font-family: 'Times New Roman', serif; font-size: 42px; font-weight: 700; margin: 0 0 30px 0; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
                 FAQ
             </h2>
             <div style="text-align: left; max-height: 600px; overflow-y: auto; padding-right: 10px;">
-                <div
-                    style="margin-bottom: 25px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; border: 2px solid rgba(255,255,255,0.2);">
-                    <h3
-                        style="color: #F39C12; font-family: 'Times New Roman', serif; font-size: 20px; font-weight: 700; margin: 0 0 10px 0; text-shadow: 1px 1px 0px #34495E;">
-                        What is a hackathon?</h3>
-                    <p
-                        style="color: white; font-family: 'Times New Roman', serif; font-size: 16px; margin: 0; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px #34495E;">
-                        We consider a hackathon to be a 24-36 hour prototyping marathon. SunHacks is a 24 hour hackathon
-                        this Fall! Work on software or hardware solutions to real world problems, innovative projects,
-                        or anything you can think of (even if it's a silly idea)!</p>
+                <div class="faq-item" style="margin-bottom: 15px; background: rgba(255,255,255,0.1); border-radius: 15px; border: 2px solid rgba(192, 192, 192, 0.6); overflow: hidden;">
+                    <button class="faq-question" style="width: 100%; background: none; border: none; padding: 20px; text-align: left; cursor: pointer; color: white; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 700; text-shadow: 1px 1px 0px rgba(0,0,0,0.5); display: flex; justify-content: space-between; align-items: center;">
+                        Is sunhacks free to attend?
+                        <span class="faq-toggle" style="font-size: 20px; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="display: none; padding: 0 20px 20px 20px; color: white; font-family: 'Times New Roman', serif; font-size: 16px; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                        Yes! Food will be provided for the duration of the event. We will also have swag and prizes!
+                    </div>
                 </div>
-                <div
-                    style="margin-bottom: 25px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; border: 2px solid rgba(255,255,255,0.2);">
-                    <h3
-                        style="color: #F1C40F; font-family: 'Georgia', serif; font-size: 20px; font-weight: 700; margin: 0 0 10px 0; text-shadow: 1px 1px 0px #6C5CE7;">
-                        Who can hack?</h3>
-                    <p
-                        style="color: white; font-family: 'Georgia', serif; font-size: 16px; margin: 0; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px #6C5CE7;">
-                        Any student over the age of 18 can participate! Arizona State University students can attend
-                        in-person, however, we are limiting in-person participants at our venue and streaming studio,
-                        apply early to snag a spot! If you've recently graduated you can still participate if you're
-                        within one year of your graduation.</p>
+
+                <div class="faq-item" style="margin-bottom: 15px; background: rgba(255,255,255,0.1); border-radius: 15px; border: 2px solid rgba(192, 192, 192, 0.6); overflow: hidden;">
+                    <button class="faq-question" style="width: 100%; background: none; border: none; padding: 20px; text-align: left; cursor: pointer; color: white; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 700; text-shadow: 1px 1px 0px rgba(0,0,0,0.5); display: flex; justify-content: space-between; align-items: center;">
+                        Where is the event? Is it in person or virtual? Where can I park?
+                        <span class="faq-toggle" style="font-size: 20px; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="display: none; padding: 0 20px 20px 20px; color: white; font-family: 'Times New Roman', serif; font-size: 16px; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                        The event is located in the XXXX Building at STREET ADDRESS.<br><br>
+                        You can park in Lot X,Y, Z which you can see on this campus parking site - LINK
+                    </div>
                 </div>
-                <div
-                    style="margin-bottom: 25px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; border: 2px solid rgba(255,255,255,0.2);">
-                    <h3
-                        style="color: #F1C40F; font-family: 'Georgia', serif; font-size: 20px; font-weight: 700; margin: 0 0 10px 0; text-shadow: 1px 1px 0px #6C5CE7;">
-                        I've never programmed before, is it okay?</h3>
-                    <p
-                        style="color: white; font-family: 'Georgia', serif; font-size: 16px; margin: 0; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px #6C5CE7;">
-                        Yes! Programmers are not the only people who can participate at a hackathon! We have people from
-                        all sorts of backgrounds and levels of experience attend SunHacks. If you are new to
-                        programming, we also have mentors and workshops that can teach you how to code! All you need to
-                        do is attend, and we'll support you the rest of the way!</p>
+
+                <div class="faq-item" style="margin-bottom: 15px; background: rgba(255,255,255,0.1); border-radius: 15px; border: 2px solid rgba(192, 192, 192, 0.6); overflow: hidden;">
+                    <button class="faq-question" style="width: 100%; background: none; border: none; padding: 20px; text-align: left; cursor: pointer; color: white; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 700; text-shadow: 1px 1px 0px rgba(0,0,0,0.5); display: flex; justify-content: space-between; align-items: center;">
+                        Who can attend? What if I don't have any experience? Do I have to be 18?
+                        <span class="faq-toggle" style="font-size: 20px; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="display: none; padding: 0 20px 20px 20px; color: white; font-family: 'Times New Roman', serif; font-size: 16px; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                        This event is open to any students. It is beginner friendly, with workshops to help you learn during the event, and mentors available to help you as you work on your project.<br><br>
+                        Attendees must be at least 13 years old due to child privacy laws. If under 18, you will need to fill out this liability form from the university to participate - LINK.
+                    </div>
                 </div>
-                <div
-                    style="margin-bottom: 25px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; border: 2px solid rgba(255,255,255,0.2);">
-                    <h3
-                        style="color: #F1C40F; font-family: 'Georgia', serif; font-size: 20px; font-weight: 700; margin: 0 0 10px 0; text-shadow: 1px 1px 0px #6C5CE7;">
-                        How much does it cost to participate?</h3>
-                    <p
-                        style="color: white; font-family: 'Georgia', serif; font-size: 16px; margin: 0; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px #6C5CE7;">
-                        SunHacks costs zip, zilch and nada to participate! We will never charge you any sort of
-                        participation fee!</p>
+
+                <div class="faq-item" style="margin-bottom: 15px; background: rgba(255,255,255,0.1); border-radius: 15px; border: 2px solid rgba(192, 192, 192, 0.6); overflow: hidden;">
+                    <button class="faq-question" style="width: 100%; background: none; border: none; padding: 20px; text-align: left; cursor: pointer; color: white; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 700; text-shadow: 1px 1px 0px rgba(0,0,0,0.5); display: flex; justify-content: space-between; align-items: center;">
+                        What is the team size limit?
+                        <span class="faq-toggle" style="font-size: 20px; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="display: none; padding: 0 20px 20px 20px; color: white; font-family: 'Times New Roman', serif; font-size: 16px; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                        Teams should be between 1 and 4 people. We will have a team building activity right after opening ceremony if you'd like to find team members!
+                    </div>
                 </div>
-                <div
-                    style="margin-bottom: 25px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; border: 2px solid rgba(255,255,255,0.2);">
-                    <h3
-                        style="color: #F1C40F; font-family: 'Georgia', serif; font-size: 20px; font-weight: 700; margin: 0 0 10px 0; text-shadow: 1px 1px 0px #6C5CE7;">
-                        What are the rules?</h3>
-                    <p
-                        style="color: white; font-family: 'Georgia', serif; font-size: 16px; margin: 0; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px #6C5CE7;">
-                        Follow the MLH code of conduct! If you are participating with a team, a maximum of 4 people are
-                        allowed. Regardless of whether you are in a team or on your own, only one project can be
-                        submitted for the weekend!</p>
+
+                <div class="faq-item" style="margin-bottom: 15px; background: rgba(255,255,255,0.1); border-radius: 15px; border: 2px solid rgba(192, 192, 192, 0.6); overflow: hidden;">
+                    <button class="faq-question" style="width: 100%; background: none; border: none; padding: 20px; text-align: left; cursor: pointer; color: white; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 700; text-shadow: 1px 1px 0px rgba(0,0,0,0.5); display: flex; justify-content: space-between; align-items: center;">
+                        Are there travel reimbursements?
+                        <span class="faq-toggle" style="font-size: 20px; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="display: none; padding: 0 20px 20px 20px; color: white; font-family: 'Times New Roman', serif; font-size: 16px; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                        We are not able to provide travel reimbursements at this time.
+                    </div>
                 </div>
-                <div
-                    style="margin-bottom: 25px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; border: 2px solid rgba(255,255,255,0.2);">
-                    <h3
-                        style="color: #F1C40F; font-family: 'Georgia', serif; font-size: 20px; font-weight: 700; margin: 0 0 10px 0; text-shadow: 1px 1px 0px #6C5CE7;">
-                        Can I be a mentor/judge/speaker?</h3>
-                    <p
-                        style="color: white; font-family: 'Georgia', serif; font-size: 16px; margin: 0; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px #6C5CE7;">
-                        Our participation rules apply (see: "who can hack"), but we are open to making exceptions where
-                        applicable! All are eligible to be a mentor or speaker regardless of prior experience, however,
-                        a hacker cannot be a judge. As we have limited space for speakers and judges, those will be
-                        selected based on talk or experience respectively and you will receive confirmation from us when
-                        it comes time!</p>
+
+                <div class="faq-item" style="margin-bottom: 15px; background: rgba(255,255,255,0.1); border-radius: 15px; border: 2px solid rgba(192, 192, 192, 0.6); overflow: hidden;">
+                    <button class="faq-question" style="width: 100%; background: none; border: none; padding: 20px; text-align: left; cursor: pointer; color: white; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 700; text-shadow: 1px 1px 0px rgba(0,0,0,0.5); display: flex; justify-content: space-between; align-items: center;">
+                        What should I bring?
+                        <span class="faq-toggle" style="font-size: 20px; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="display: none; padding: 0 20px 20px 20px; color: white; font-family: 'Times New Roman', serif; font-size: 16px; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                        Your laptop, charger, headphones, deodorant, and a pillow/blanket.
+                    </div>
                 </div>
-                <div
-                    style="margin-bottom: 25px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; border: 2px solid rgba(255,255,255,0.2);">
-                    <h3
-                        style="color: #F1C40F; font-family: 'Georgia', serif; font-size: 20px; font-weight: 700; margin: 0 0 10px 0; text-shadow: 1px 1px 0px #6C5CE7;">
-                        Can I request additional accommodations?</h3>
-                    <p
-                        style="color: white; font-family: 'Georgia', serif; font-size: 16px; margin: 0; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px #6C5CE7;">
-                        Absolutely! We will be providing closed captioning, expect our speakers to provide additional
-                        accessible resources, and have multiple methods of interacting with our event through Discord.
-                        However, we can always do better! We encourage you to inform us through our registration,
-                        volunteer form, or via email as soon as possible so we can incorporate your needs and continue
-                        shaping the environment toward a more inclusive future for all! If you have any questions reach
-                        out to us at team@sunhacks.io</p>
+
+                <div class="faq-item" style="margin-bottom: 15px; background: rgba(255,255,255,0.1); border-radius: 15px; border: 2px solid rgba(192, 192, 192, 0.6); overflow: hidden;">
+                    <button class="faq-question" style="width: 100%; background: none; border: none; padding: 20px; text-align: left; cursor: pointer; color: white; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 700; text-shadow: 1px 1px 0px rgba(0,0,0,0.5); display: flex; justify-content: space-between; align-items: center;">
+                        When can we start working on our project? Can I work on a previous project?
+                        <span class="faq-toggle" style="font-size: 20px; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="display: none; padding: 0 20px 20px 20px; color: white; font-family: 'Times New Roman', serif; font-size: 16px; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                        You cannot start until after opening ceremony. You may come up with ideas, but are not allowed to start coding. You cannot work on a previous project, but can use frameworks if you clearly credit them in your readme and differentiate what you made vs what you used.
+                    </div>
+                </div>
+
+                <div class="faq-item" style="margin-bottom: 15px; background: rgba(255,255,255,0.1); border-radius: 15px; border: 2px solid rgba(192, 192, 192, 0.6); overflow: hidden;">
+                    <button class="faq-question" style="width: 100%; background: none; border: none; padding: 20px; text-align: left; cursor: pointer; color: white; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 700; text-shadow: 1px 1px 0px rgba(0,0,0,0.5); display: flex; justify-content: space-between; align-items: center;">
+                        How many challenges can I apply for?
+                        <span class="faq-toggle" style="font-size: 20px; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="display: none; padding: 0 20px 20px 20px; color: white; font-family: 'Times New Roman', serif; font-size: 16px; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                        As many as you want!
+                    </div>
+                </div>
+
+                <div class="faq-item" style="margin-bottom: 15px; background: rgba(255,255,255,0.1); border-radius: 15px; border: 2px solid rgba(192, 192, 192, 0.6); overflow: hidden;">
+                    <button class="faq-question" style="width: 100%; background: none; border: none; padding: 20px; text-align: left; cursor: pointer; color: white; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 700; text-shadow: 1px 1px 0px rgba(0,0,0,0.5); display: flex; justify-content: space-between; align-items: center;">
+                        Do I have to stay overnight?
+                        <span class="faq-toggle" style="font-size: 20px; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="display: none; padding: 0 20px 20px 20px; color: white; font-family: 'Times New Roman', serif; font-size: 16px; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                        No, you can leave and come back if you would prefer.
+                    </div>
+                </div>
+
+                <div class="faq-item" style="margin-bottom: 15px; background: rgba(255,255,255,0.1); border-radius: 15px; border: 2px solid rgba(192, 192, 192, 0.6); overflow: hidden;">
+                    <button class="faq-question" style="width: 100%; background: none; border: none; padding: 20px; text-align: left; cursor: pointer; color: white; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 700; text-shadow: 1px 1px 0px rgba(0,0,0,0.5); display: flex; justify-content: space-between; align-items: center;">
+                        What kind of activities will there be?
+                        <span class="faq-toggle" style="font-size: 20px; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="display: none; padding: 0 20px 20px 20px; color: white; font-family: 'Times New Roman', serif; font-size: 16px; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                        We will post the schedule closer to the event. There will be workshops and activities to take a break and meet other hackers and our wonderful sponsors.
+                    </div>
+                </div>
+
+                <div class="faq-item" style="margin-bottom: 15px; background: rgba(255,255,255,0.1); border-radius: 15px; border: 2px solid rgba(192, 192, 192, 0.6); overflow: hidden;">
+                    <button class="faq-question" style="width: 100%; background: none; border: none; padding: 20px; text-align: left; cursor: pointer; color: white; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 700; text-shadow: 1px 1px 0px rgba(0,0,0,0.5); display: flex; justify-content: space-between; align-items: center;">
+                        What is a hackathon?
+                        <span class="faq-toggle" style="font-size: 20px; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="display: none; padding: 0 20px 20px 20px; color: white; font-family: 'Times New Roman', serif; font-size: 16px; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                        A hackathon is an event where students "hack" together and create an app, website, game, etc. in 24-48 hours. There will be no malicious "hacking".
+                    </div>
+                </div>
+
+                <div class="faq-item" style="margin-bottom: 15px; background: rgba(255,255,255,0.1); border-radius: 15px; border: 2px solid rgba(192, 192, 192, 0.6); overflow: hidden;">
+                    <button class="faq-question" style="width: 100%; background: none; border: none; padding: 20px; text-align: left; cursor: pointer; color: white; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 700; text-shadow: 1px 1px 0px rgba(0,0,0,0.5); display: flex; justify-content: space-between; align-items: center;">
+                        Will hardware be available?
+                        <span class="faq-toggle" style="font-size: 20px; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="display: none; padding: 0 20px 20px 20px; color: white; font-family: 'Times New Roman', serif; font-size: 16px; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                        We do not have hardware available, but you are welcome to bring your own. Due to building fire codes, soldering kits are not allowed in the venue.
+                    </div>
+                </div>
+
+                <div class="faq-item" style="margin-bottom: 15px; background: rgba(255,255,255,0.1); border-radius: 15px; border: 2px solid rgba(192, 192, 192, 0.6); overflow: hidden;">
+                    <button class="faq-question" style="width: 100%; background: none; border: none; padding: 20px; text-align: left; cursor: pointer; color: white; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 700; text-shadow: 1px 1px 0px rgba(0,0,0,0.5); display: flex; justify-content: space-between; align-items: center;">
+                        Are you sending out acceptances? Is there a deadline to apply? Is there a waitlist?
+                        <span class="faq-toggle" style="font-size: 20px; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="display: none; padding: 0 20px 20px 20px; color: white; font-family: 'Times New Roman', serif; font-size: 16px; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                        We will send out acceptances XX days before the event. If you need earlier confirmation to book travel, please reach out to our team at EMAIL ADDRESS. Applications will close once we reach the maximum amount of hackers we can support, but we will open a waitlist on the day of the event for any local hackers who want to fill the spots of any accepted hackers who do not end up attending.
+                    </div>
+                </div>
+
+                <div class="faq-item" style="margin-bottom: 15px; background: rgba(255,255,255,0.1); border-radius: 15px; border: 2px solid rgba(192, 192, 192, 0.6); overflow: hidden;">
+                    <button class="faq-question" style="width: 100%; background: none; border: none; padding: 20px; text-align: left; cursor: pointer; color: white; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 700; text-shadow: 1px 1px 0px rgba(0,0,0,0.5); display: flex; justify-content: space-between; align-items: center;">
+                        How do I sign up to be a mentor/judge/volunteer?
+                        <span class="faq-toggle" style="font-size: 20px; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="display: none; padding: 0 20px 20px 20px; color: white; font-family: 'Times New Roman', serif; font-size: 16px; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                        You can sign up here - LINK
+                    </div>
+                </div>
+
+                <div class="faq-item" style="margin-bottom: 15px; background: rgba(255,255,255,0.1); border-radius: 15px; border: 2px solid rgba(192, 192, 192, 0.6); overflow: hidden;">
+                    <button class="faq-question" style="width: 100%; background: none; border: none; padding: 20px; text-align: left; cursor: pointer; color: white; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 700; text-shadow: 1px 1px 0px rgba(0,0,0,0.5); display: flex; justify-content: space-between; align-items: center;">
+                        I have a different question!
+                        <span class="faq-toggle" style="font-size: 20px; transition: transform 0.3s ease;">+</span>
+                    </button>
+                    <div class="faq-answer" style="display: none; padding: 0 20px 20px 20px; color: white; font-family: 'Times New Roman', serif; font-size: 16px; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                        Email us at <a href="mailto:team@sunhacks.io" style="color: white; text-decoration: none;">team@sunhacks.io</a> !
+                    </div>
                 </div>
             </div>
             
@@ -724,7 +792,7 @@
             <div style="text-align: center; margin-top: 40px; padding-top: 30px; border-top: 2px solid rgba(192, 192, 192, 0.6);">
                 <p
                     style="color: white; font-family: 'Times New Roman', serif; font-size: 20px; margin: 0 0 25px 0; font-weight: 600; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
-                    ❤️ Love from the SunHacks Team ❤️
+                    🌵 Happy hacking 💜 from the sunhacks team 🌵
                 </p>
                 
                 <!-- Social Links -->
