@@ -3,13 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>SunHacks 2025 - Parallax Landing</title>
+    <title>sunhacks 2025 - Parallax Landing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./parallax/style.css">
 
 </head>
 
 <body>
+
+    <!-- Navigation Bar -->
+    <nav style="position: fixed; top: 0; left: 0; right: 0; z-index: 2000; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-bottom: 2px solid rgba(192, 192, 192, 0.8); padding: 15px 0;">
+        <div style="display: flex; justify-content: center; align-items: center; gap: 40px;">
+            <a href="#home" style="color: white; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 600; transition: all 0.3s ease;">Home</a>
+            <a href="#about" style="color: white; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 600; transition: all 0.3s ease;">About</a>
+            <a href="#tracks" style="color: white; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 600; transition: all 0.3s ease;">Tracks</a>
+            <a href="#schedule" style="color: white; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 600; transition: all 0.3s ease;">Schedule</a>
+            <a href="#sponsor" style="color: white; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 600; transition: all 0.3s ease;">Sponsor</a>
+            <a href="#faq" style="color: white; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 18px; font-weight: 600; transition: all 0.3s ease;">FAQ</a>
+        </div>
+    </nav>
 
     <!-- partial:index.partial.html -->
     <svg class="parallax" viewBox="0 0 750 500" preserveAspectRatio="xMidYMax slice">
@@ -417,232 +429,219 @@
 
     </svg>
 
-    <!-- Hero Text Overlay - Clean & Creative -->
-    <div id="hero-text"
+        <!-- Hero Text Overlay - Home Section -->
+    <div id="hero-text" id="home"
         style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto;">
         <div
-            style="background: linear-gradient(135deg, #FF6B9D, #C44569, #F8B500); padding: 50px 70px; border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.2); border: 4px solid #FFE66D; position: relative; overflow: hidden;">
-            <!-- Decorative elements -->
-            <div
-                style="position: absolute; top: -10px; left: -10px; width: 30px; height: 30px; background: #FFE66D; border-radius: 50%; transform: rotate(45deg);">
-            </div>
-            <div
-                style="position: absolute; top: -5px; right: -5px; width: 20px; height: 20px; background: #4ECDC4; border-radius: 50%;">
-            </div>
-            <div
-                style="position: absolute; bottom: -8px; left: 20px; width: 25px; height: 25px; background: #FF6B6B; border-radius: 50%;">
-            </div>
-            <div
-                style="position: absolute; bottom: -5px; right: 30px; width: 15px; height: 15px; background: #FFE66D; border-radius: 50%;">
-            </div>
-
+            style="background: rgba(0, 0, 0, 0.3); padding: 50px 70px; border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.4); border: 2px solid rgba(192, 192, 192, 0.8); position: relative; overflow: hidden; backdrop-filter: blur(10px);">
+            
             <h1
-                style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 72px; font-weight: 900; margin: 0; text-shadow: 3px 3px 0px #C44569; transform: rotate(-2deg);">
-                SUNHACKS
+                style="color: white; font-family: 'Times New Roman', serif; font-size: 48px; font-weight: 900; margin: 0; text-shadow: 2px 2px 0px rgba(0,0,0,0.5);">
+                sunhacks 2025
             </h1>
-            <div
-                style="width: 120px; height: 8px; background: linear-gradient(90deg, #FFE66D, #4ECDC4, #FF6B6B); margin: 25px auto; border-radius: 4px; transform: rotate(1deg);">
-            </div>
             <p
-                style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 24px; margin: 0 0 35px 0; font-weight: 600; text-shadow: 2px 2px 0px #C44569;">
-                Arizona's Premier Hackathon
+                style="color: white; font-family: 'Times New Roman', serif; font-size: 28px; margin: 20px 0 30px 0; font-weight: 600; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                Arizona's Largest Hackathon
             </p>
-            <a href="/register"
-                style="display: inline-block; background: linear-gradient(135deg, #FFE66D, #FF6B6B); color: #C44569; padding: 18px 45px; border-radius: 50px; text-decoration: none; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 20px; font-weight: 700; box-shadow: 0 8px 20px rgba(0,0,0,0.3); transition: all 0.3s ease; border: 3px solid white; transform: rotate(1deg);">
-                Register Now
-            </a>
+            <p
+                style="color: white; font-family: 'Times New Roman', serif; font-size: 20px; margin: 0 0 40px 0; font-weight: 500; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                September 27th - September 28th
+            </p>
+            
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <a href="/register" target="_blank"
+                    style="display: inline-block; background: rgba(255, 255, 255, 0.2); color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 16px; font-weight: 600; transition: all 0.3s ease; border: 2px solid rgba(192, 192, 192, 0.8); backdrop-filter: blur(5px);">
+                    Register
+                </a>
+                <a href="/devpost" target="_blank"
+                    style="display: inline-block; background: rgba(255, 255, 255, 0.2); color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 16px; font-weight: 600; transition: all 0.3s ease; border: 2px solid rgba(192, 192, 192, 0.8); backdrop-filter: blur(5px);">
+                    Devpost
+                </a>
+                <a href="/sponsor" target="_blank"
+                    style="display: inline-block; background: rgba(255, 255, 255, 0.2); color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 16px; font-weight: 600; transition: all 0.3s ease; border: 2px solid rgba(192, 192, 192, 0.8); backdrop-filter: blur(5px);">
+                    Sponsor Us
+                </a>
+            </div>
         </div>
     </div>
 
-    <!-- What is SunHacks Section -->
-    <div id="what-is-sunhacks"
-        style="position: absolute; top: 150%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto; max-width: 800px;">
+    <!-- About Section -->
+    <div id="about"
+        style="position: absolute; top: 150%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto; max-width: 900px;">
         <div
-            style="background: linear-gradient(135deg, #4ECDC4, #44A08D, #2ECC71); padding: 40px 50px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.15); border: 4px solid #FFE66D; position: relative;">
-            <!-- Decorative elements -->
-            <div
-                style="position: absolute; top: -10px; left: -10px; width: 25px; height: 25px; background: #FFE66D; border-radius: 50%;">
-            </div>
-            <div
-                style="position: absolute; top: -5px; right: -5px; width: 20px; height: 20px; background: #4ECDC4; border-radius: 50%;">
-            </div>
-            <div
-                style="position: absolute; bottom: -8px; left: 30px; width: 15px; height: 15px; background: #FF6B6B; border-radius: 50%;">
-            </div>
-
+            style="background: rgba(0, 0, 0, 0.3); padding: 40px 50px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.4); border: 2px solid rgba(192, 192, 192, 0.8); position: relative; backdrop-filter: blur(10px);">
+            
             <h2
-                style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 38px; font-weight: 700; margin: 0 0 20px 0; text-shadow: 2px 2px 0px #2ECC71; transform: rotate(-1deg);">
-                What is SunHacks?
+                style="color: white; font-family: 'Times New Roman', serif; font-size: 42px; font-weight: 700; margin: 0 0 30px 0; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                ABOUT
             </h2>
+            
+            <h3
+                style="color: white; font-family: 'Times New Roman', serif; font-size: 28px; font-weight: 600; margin: 0 0 20px 0; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                History of SunHacks
+            </h3>
             <p
-                style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 18px; margin: 0; font-weight: 500; line-height: 1.7; text-shadow: 1px 1px 0px #2ECC71;">
-                SunHacks is a yearly hackathon (ideathon, coding marathon, prototyping marathon, etc) designed to
-                support students in their innovative journeys. SunHacks is for students of all skill levels, and our
-                job as organizers is to support you by providing the resources you need to achieve your development
-                dreams.
-                We provide you with workshops, mentors, community connections, and peers who are motivated to help each
-                other succeed and reach their goals.
+                style="color: white; font-family: 'Times New Roman', serif; font-size: 18px; margin: 0 0 30px 0; font-weight: 500; line-height: 1.7; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                SunHacks is a yearly hackathon designed to support students in their innovative journeys. Our mission is to provide 
+                workshops, mentors, community connections, and peers who are motivated to help each other succeed and reach their goals.
             </p>
+            
+            <!-- Placeholder for last year hackathon pictures -->
+            <div style="display: flex; justify-content: center; gap: 20px; margin: 30px 0; flex-wrap: wrap;">
+                <div style="width: 200px; height: 150px; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(192, 192, 192, 0.6); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: rgba(255, 255, 255, 0.7); font-family: 'Times New Roman', serif;">
+                    Last Year Photo 1
+                </div>
+                <div style="width: 200px; height: 150px; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(192, 192, 192, 0.6); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: rgba(255, 255, 255, 0.7); font-family: 'Times New Roman', serif;">
+                    Last Year Photo 2
+                </div>
+            </div>
+            
+            <h3
+                style="color: white; font-family: 'Times New Roman', serif; font-size: 24px; font-weight: 600; margin: 30px 0 20px 0; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                Interested in Working With Us?
+            </h3>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <a href="/judging" target="_blank"
+                    style="display: inline-block; background: rgba(255, 255, 255, 0.2); color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 16px; font-weight: 600; transition: all 0.3s ease; border: 2px solid rgba(192, 192, 192, 0.8); backdrop-filter: blur(5px);">
+                    Judging
+                </a>
+                <a href="/volunteering" target="_blank"
+                    style="display: inline-block; background: rgba(255, 255, 255, 0.2); color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 16px; font-weight: 600; transition: all 0.3s ease; border: 2px solid rgba(192, 192, 192, 0.8); backdrop-filter: blur(5px);">
+                    Volunteering
+                </a>
+                <a href="/mentoring" target="_blank"
+                    style="display: inline-block; background: rgba(255, 255, 255, 0.2); color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 16px; font-weight: 600; transition: all 0.3s ease; border: 2px solid rgba(192, 192, 192, 0.8); backdrop-filter: blur(5px);">
+                    Mentoring
+                </a>
+            </div>
         </div>
     </div>
 
-    <!-- 2025 Announcement Section -->
-    <div id="announcement-2025"
-        style="position: absolute; top: 250%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto; max-width: 900px;">
+    <!-- Meet the Team Section -->
+    <div id="team-section"
+        style="position: absolute; top: 250%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto; max-width: 1000px;">
         <div
-            style="background: linear-gradient(135deg, #FF6B6B, #FF8E53, #FFB347); padding: 45px 55px; border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.2); border: 5px solid #FFE66D; position: relative;">
-            <!-- Decorative elements -->
-            <div
-                style="position: absolute; top: -10px; left: -10px; width: 30px; height: 30px; background: #FFE66D; border-radius: 50%; transform: rotate(45deg);">
-            </div>
-            <div
-                style="position: absolute; top: -5px; right: -5px; width: 20px; height: 20px; background: #4ECDC4; border-radius: 50%;">
-            </div>
-            <div
-                style="position: absolute; bottom: -8px; left: 20px; width: 25px; height: 25px; background: #FF6B6B; border-radius: 50%;">
-            </div>
-            <div
-                style="position: absolute; bottom: -5px; right: 30px; width: 15px; height: 15px; background: #FFE66D; border-radius: 50%;">
-            </div>
-
+            style="background: rgba(0, 0, 0, 0.3); padding: 45px 55px; border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.4); border: 2px solid rgba(192, 192, 192, 0.8); position: relative; backdrop-filter: blur(10px);">
+            
             <h2
-                style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 42px; font-weight: 800; margin: 0 0 25px 0; text-shadow: 3px 3px 0px #FF8E53; transform: rotate(-1deg);">
-                And we're back for 2025!
+                style="color: white; font-family: 'Times New Roman', serif; font-size: 42px; font-weight: 800; margin: 0 0 40px 0; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                MEET the Team
             </h2>
-            <p
-                style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 20px; margin: 0 0 30px 0; font-weight: 600; line-height: 1.5; text-shadow: 2px 2px 0px #FF8E53;">
-                We are incredibly excited to bring SunHacks back to the Arizona State community!
-            </p>
-            <div
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; text-align: left;">
-                <div
-                    style="background: linear-gradient(135deg, #4ECDC4, #44A08D); padding: 25px; border-radius: 20px; border: 3px solid #FFE66D; box-shadow: 0 8px 20px rgba(0,0,0,0.15);">
-                    <h3
-                        style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 22px; font-weight: 700; margin: 0 0 12px 0; text-shadow: 2px 2px 0px #44A08D;">
-                        Fully In-Person</h3>
-                    <p
-                        style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 16px; margin: 0; line-height: 1.5; font-weight: 500; text-shadow: 1px 1px 0px #44A08D;">
-                        For Fall 2024, SunHacks will be hosted as a fully in-person event at the Sun Devil Fitness
-                        Complex (SDFC) at Arizona State University - Tempe.</p>
+            
+            <!-- 10 Organizer Pictures Grid -->
+            <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; margin: 0 auto; max-width: 800px;">
+                <div style="width: 120px; height: 120px; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(192, 192, 192, 0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255, 255, 255, 0.7); font-family: 'Times New Roman', serif; font-size: 12px; text-align: center;">
+                    Organizer 1
                 </div>
-                <div
-                    style="background: linear-gradient(135deg, #FF6B9D, #C44569); padding: 25px; border-radius: 20px; border: 3px solid #FFE66D; box-shadow: 0 8px 20px rgba(0,0,0,0.15);">
-                    <h3
-                        style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 22px; font-weight: 700; margin: 0 0 12px 0; text-shadow: 2px 2px 0px #C44569;">
-                        All Students Welcome!</h3>
-                    <p
-                        style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 16px; margin: 0; line-height: 1.5; font-weight: 500; text-shadow: 1px 1px 0px #C44569;">
-                        We are open to all skill levels, ages, background, fields, and more. As long as you're a student
-                        you're in!</p>
+                <div style="width: 120px; height: 120px; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(192, 192, 192, 0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255, 255, 255, 0.7); font-family: 'Times New Roman', serif; font-size: 12px; text-align: center;">
+                    Organizer 2
                 </div>
-                <div
-                    style="background: linear-gradient(135deg, #F8B500, #FF8E53); padding: 25px; border-radius: 20px; border: 3px solid #FFE66D; box-shadow: 0 8px 20px rgba(0,0,0,0.15);">
-                    <h3
-                        style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 22px; font-weight: 700; margin: 0 0 12px 0; text-shadow: 2px 2px 0px #FF8E53;">
-                        In-Person Workshops, Sponsors & Swag</h3>
-                    <p
-                        style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 16px; margin: 0; line-height: 1.5; font-weight: 500; text-shadow: 1px 1px 0px #FF8E53;">
-                        This year, we will have sponsorship present in-person, as well as swag and live activities. Our
-                        workshops will be facilitated in person and live-streamed.</p>
+                <div style="width: 120px; height: 120px; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(192, 192, 192, 0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255, 255, 255, 0.7); font-family: 'Times New Roman', serif; font-size: 12px; text-align: center;">
+                    Organizer 3
+                </div>
+                <div style="width: 120px; height: 120px; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(192, 192, 192, 0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255, 255, 255, 0.7); font-family: 'Times New Roman', serif; font-size: 12px; text-align: center;">
+                    Organizer 4
+                </div>
+                <div style="width: 120px; height: 120px; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(192, 192, 192, 0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255, 255, 255, 0.7); font-family: 'Times New Roman', serif; font-size: 12px; text-align: center;">
+                    Organizer 5
+                </div>
+                <div style="width: 120px; height: 120px; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(192, 192, 192, 0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255, 255, 255, 0.7); font-family: 'Times New Roman', serif; font-size: 12px; text-align: center;">
+                    Organizer 6
+                </div>
+                <div style="width: 120px; height: 120px; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(192, 192, 192, 0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255, 255, 255, 0.7); font-family: 'Times New Roman', serif; font-size: 12px; text-align: center;">
+                    Organizer 7
+                </div>
+                <div style="width: 120px; height: 120px; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(192, 192, 192, 0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255, 255, 255, 0.7); font-family: 'Times New Roman', serif; font-size: 12px; text-align: center;">
+                    Organizer 8
+                </div>
+                <div style="width: 120px; height: 120px; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(192, 192, 192, 0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255, 255, 255, 0.7); font-family: 'Times New Roman', serif; font-size: 12px; text-align: center;">
+                    Organizer 9
+                </div>
+                <div style="width: 120px; height: 120px; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(192, 192, 192, 0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255, 255, 255, 0.7); font-family: 'Times New Roman', serif; font-size: 12px; text-align: center;">
+                    Organizer 10
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Sponsors Section -->
-    <div id="sponsors-section"
+    <!-- Tracks Section -->
+    <div id="tracks"
         style="position: absolute; top: 350%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto; max-width: 600px;">
         <div
-            style="background: linear-gradient(135deg, #9B59B6, #8E44AD, #6C5CE7); padding: 40px 50px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.15); border: 4px solid #FFE66D; position: relative;">
-            <!-- Decorative elements -->
-            <div
-                style="position: absolute; top: -10px; left: -10px; width: 25px; height: 25px; background: #FFE66D; border-radius: 50%;">
-            </div>
-            <div
-                style="position: absolute; top: -5px; right: -5px; width: 20px; height: 20px; background: #4ECDC4; border-radius: 50%;">
-            </div>
-            <div
-                style="position: absolute; bottom: -8px; left: 30px; width: 15px; height: 15px; background: #FF6B6B; border-radius: 50%;">
-            </div>
-
+            style="background: rgba(0, 0, 0, 0.3); padding: 40px 50px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.4); border: 2px solid rgba(192, 192, 192, 0.8); position: relative; backdrop-filter: blur(10px);">
+            
             <h2
-                style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 38px; font-weight: 700; margin: 0 0 30px 0; text-shadow: 2px 2px 0px #8E44AD; transform: rotate(-1deg);">
-                Our Sponsors
+                style="color: white; font-family: 'Times New Roman', serif; font-size: 42px; font-weight: 700; margin: 0 0 30px 0; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                TRACKS
             </h2>
-            <div style="display: flex; justify-content: center; align-items: center; gap: 50px; flex-wrap: wrap;">
-                <div
-                    style="background: linear-gradient(135deg, #FFE66D, #FFB347); padding: 25px 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); border: 3px solid white; transform: rotate(2deg);">
-                    <div
-                        style="font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 28px; font-weight: 900; color: #FF6B6B; text-shadow: 2px 2px 0px #FFB347;">
-                        AMAZON</div>
-                </div>
-                <div
-                    style="background: linear-gradient(135deg, #4ECDC4, #44A08D); padding: 25px 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); border: 3px solid white; transform: rotate(-2deg);">
-                    <div
-                        style="font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 28px; font-weight: 900; color: white; text-shadow: 2px 2px 0px #44A08D;">
-                        STATEFARM</div>
-                </div>
+            
+            <div style="background: rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 20px; border: 2px solid rgba(192, 192, 192, 0.6);">
+                <p
+                    style="color: white; font-family: 'Times New Roman', serif; font-size: 24px; margin: 0; font-weight: 600; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                    Coming Soon...
+                </p>
             </div>
         </div>
     </div>
 
-    <!-- Team Section -->
-    <div id="team-section"
+    <!-- Schedule Section -->
+    <div id="schedule"
         style="position: absolute; top: 450%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto; max-width: 600px;">
         <div
-            style="background: linear-gradient(135deg, #2ECC71, #27AE60, #16A085); padding: 40px 50px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.15); border: 4px solid #FFE66D; position: relative;">
-            <!-- Decorative elements -->
-            <div
-                style="position: absolute; top: -10px; left: -10px; width: 25px; height: 25px; background: #FFE66D; border-radius: 50%;">
-            </div>
-            <div
-                style="position: absolute; top: -5px; right: -5px; width: 20px; height: 20px; background: #4ECDC4; border-radius: 50%;">
-            </div>
-            <div
-                style="position: absolute; bottom: -8px; left: 30px; width: 15px; height: 15px; background: #FF6B6B; border-radius: 50%;">
-            </div>
-
+            style="background: rgba(0, 0, 0, 0.3); padding: 40px 50px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.4); border: 2px solid rgba(192, 192, 192, 0.8); position: relative; backdrop-filter: blur(10px);">
+            
             <h2
-                style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 38px; font-weight: 700; margin: 0 0 20px 0; text-shadow: 2px 2px 0px #27AE60; transform: rotate(-1deg);">
-                Our Team
+                style="color: white; font-family: 'Times New Roman', serif; font-size: 42px; font-weight: 700; margin: 0 0 30px 0; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                SCHEDULE
             </h2>
-            <p
-                style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 18px; margin: 0; font-weight: 500; line-height: 1.7; text-shadow: 1px 1px 0px #27AE60;">
-                Meet the passionate organizers behind SunHacks! Our dedicated team works tirelessly to create an amazing
-                experience for all participants, from workshops and mentorship to community building and innovation
-                support.
-            </p>
+            
+            <div style="background: rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 20px; border: 2px solid rgba(192, 192, 192, 0.6);">
+                <p
+                    style="color: white; font-family: 'Times New Roman', serif; font-size: 24px; margin: 0; font-weight: 600; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                    Coming Soon...
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sponsor Section -->
+    <div id="sponsor"
+        style="position: absolute; top: 550%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto; max-width: 600px;">
+        <div
+            style="background: rgba(0, 0, 0, 0.3); padding: 40px 50px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.4); border: 2px solid rgba(192, 192, 192, 0.8); position: relative; backdrop-filter: blur(10px);">
+            
+            <h2
+                style="color: white; font-family: 'Times New Roman', serif; font-size: 42px; font-weight: 700; margin: 0 0 30px 0; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                SPONSOR
+            </h2>
+            
+            <div style="background: rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 20px; border: 2px solid rgba(192, 192, 192, 0.6);">
+                <p
+                    style="color: white; font-family: 'Times New Roman', serif; font-size: 24px; margin: 0; font-weight: 600; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                    Coming Soon...
+                </p>
+            </div>
         </div>
     </div>
 
     <!-- FAQ Section -->
     <div id="faq-section"
-        style="position: absolute; top: 550%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto; max-width: 900px;">
+        style="position: absolute; top: 650%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; text-align: center; pointer-events: auto; max-width: 900px;">
         <div
-            style="background: linear-gradient(135deg, #E74C3C, #C0392B, #E67E22); padding: 40px 50px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.15); border: 4px solid #FFE66D; position: relative;">
-            <!-- Decorative elements -->
-            <div
-                style="position: absolute; top: -10px; left: -10px; width: 25px; height: 25px; background: #FFE66D; border-radius: 50%;">
-            </div>
-            <div
-                style="position: absolute; top: -5px; right: -5px; width: 20px; height: 20px; background: #4ECDC4; border-radius: 50%;">
-            </div>
-            <div
-                style="position: absolute; bottom: -8px; left: 30px; width: 15px; height: 15px; background: #FF6B6B; border-radius: 50%;">
-            </div>
-
+            style="background: rgba(0, 0, 0, 0.3); padding: 40px 50px; border-radius: 25px; box-shadow: 0 15px 35px rgba(0,0,0,0.4); border: 2px solid rgba(192, 192, 192, 0.8); position: relative; backdrop-filter: blur(10px);">
+            
             <h2
-                style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 38px; font-weight: 700; margin: 0 0 30px 0; text-shadow: 2px 2px 0px #C0392B; transform: rotate(-1deg);">
-                Frequently Asked Questions
+                style="color: white; font-family: 'Times New Roman', serif; font-size: 42px; font-weight: 700; margin: 0 0 30px 0; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                FAQ
             </h2>
             <div style="text-align: left; max-height: 600px; overflow-y: auto; padding-right: 10px;">
                 <div
                     style="margin-bottom: 25px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; border: 2px solid rgba(255,255,255,0.2);">
                     <h3
-                        style="color: #FFE66D; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 20px; font-weight: 700; margin: 0 0 10px 0; text-shadow: 1px 1px 0px #C0392B;">
+                        style="color: #F39C12; font-family: 'Times New Roman', serif; font-size: 20px; font-weight: 700; margin: 0 0 10px 0; text-shadow: 1px 1px 0px #34495E;">
                         What is a hackathon?</h3>
                     <p
-                        style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 16px; margin: 0; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px #C0392B;">
+                        style="color: white; font-family: 'Times New Roman', serif; font-size: 16px; margin: 0; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px #34495E;">
                         We consider a hackathon to be a 24-36 hour prototyping marathon. SunHacks is a 24 hour hackathon
                         this Fall! Work on software or hardware solutions to real world problems, innovative projects,
                         or anything you can think of (even if it's a silly idea)!</p>
@@ -650,10 +649,10 @@
                 <div
                     style="margin-bottom: 25px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; border: 2px solid rgba(255,255,255,0.2);">
                     <h3
-                        style="color: #FFE66D; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 20px; font-weight: 700; margin: 0 0 10px 0; text-shadow: 1px 1px 0px #C0392B;">
+                        style="color: #F1C40F; font-family: 'Georgia', serif; font-size: 20px; font-weight: 700; margin: 0 0 10px 0; text-shadow: 1px 1px 0px #6C5CE7;">
                         Who can hack?</h3>
                     <p
-                        style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 16px; margin: 0; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px #C0392B;">
+                        style="color: white; font-family: 'Georgia', serif; font-size: 16px; margin: 0; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px #6C5CE7;">
                         Any student over the age of 18 can participate! Arizona State University students can attend
                         in-person, however, we are limiting in-person participants at our venue and streaming studio,
                         apply early to snag a spot! If you've recently graduated you can still participate if you're
@@ -662,10 +661,10 @@
                 <div
                     style="margin-bottom: 25px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; border: 2px solid rgba(255,255,255,0.2);">
                     <h3
-                        style="color: #FFE66D; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 20px; font-weight: 700; margin: 0 0 10px 0; text-shadow: 1px 1px 0px #C0392B;">
+                        style="color: #F1C40F; font-family: 'Georgia', serif; font-size: 20px; font-weight: 700; margin: 0 0 10px 0; text-shadow: 1px 1px 0px #6C5CE7;">
                         I've never programmed before, is it okay?</h3>
                     <p
-                        style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 16px; margin: 0; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px #C0392B;">
+                        style="color: white; font-family: 'Georgia', serif; font-size: 16px; margin: 0; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px #6C5CE7;">
                         Yes! Programmers are not the only people who can participate at a hackathon! We have people from
                         all sorts of backgrounds and levels of experience attend SunHacks. If you are new to
                         programming, we also have mentors and workshops that can teach you how to code! All you need to
@@ -674,20 +673,20 @@
                 <div
                     style="margin-bottom: 25px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; border: 2px solid rgba(255,255,255,0.2);">
                     <h3
-                        style="color: #FFE66D; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 20px; font-weight: 700; margin: 0 0 10px 0; text-shadow: 1px 1px 0px #C0392B;">
+                        style="color: #F1C40F; font-family: 'Georgia', serif; font-size: 20px; font-weight: 700; margin: 0 0 10px 0; text-shadow: 1px 1px 0px #6C5CE7;">
                         How much does it cost to participate?</h3>
                     <p
-                        style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 16px; margin: 0; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px #C0392B;">
+                        style="color: white; font-family: 'Georgia', serif; font-size: 16px; margin: 0; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px #6C5CE7;">
                         SunHacks costs zip, zilch and nada to participate! We will never charge you any sort of
                         participation fee!</p>
                 </div>
                 <div
                     style="margin-bottom: 25px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; border: 2px solid rgba(255,255,255,0.2);">
                     <h3
-                        style="color: #FFE66D; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 20px; font-weight: 700; margin: 0 0 10px 0; text-shadow: 1px 1px 0px #C0392B;">
+                        style="color: #F1C40F; font-family: 'Georgia', serif; font-size: 20px; font-weight: 700; margin: 0 0 10px 0; text-shadow: 1px 1px 0px #6C5CE7;">
                         What are the rules?</h3>
                     <p
-                        style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 16px; margin: 0; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px #C0392B;">
+                        style="color: white; font-family: 'Georgia', serif; font-size: 16px; margin: 0; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px #6C5CE7;">
                         Follow the MLH code of conduct! If you are participating with a team, a maximum of 4 people are
                         allowed. Regardless of whether you are in a team or on your own, only one project can be
                         submitted for the weekend!</p>
@@ -695,10 +694,10 @@
                 <div
                     style="margin-bottom: 25px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; border: 2px solid rgba(255,255,255,0.2);">
                     <h3
-                        style="color: #FFE66D; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 20px; font-weight: 700; margin: 0 0 10px 0; text-shadow: 1px 1px 0px #C0392B;">
+                        style="color: #F1C40F; font-family: 'Georgia', serif; font-size: 20px; font-weight: 700; margin: 0 0 10px 0; text-shadow: 1px 1px 0px #6C5CE7;">
                         Can I be a mentor/judge/speaker?</h3>
                     <p
-                        style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 16px; margin: 0; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px #C0392B;">
+                        style="color: white; font-family: 'Georgia', serif; font-size: 16px; margin: 0; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px #6C5CE7;">
                         Our participation rules apply (see: "who can hack"), but we are open to making exceptions where
                         applicable! All are eligible to be a mentor or speaker regardless of prior experience, however,
                         a hacker cannot be a judge. As we have limited space for speakers and judges, those will be
@@ -708,16 +707,44 @@
                 <div
                     style="margin-bottom: 25px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; border: 2px solid rgba(255,255,255,0.2);">
                     <h3
-                        style="color: #FFE66D; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 20px; font-weight: 700; margin: 0 0 10px 0; text-shadow: 1px 1px 0px #C0392B;">
+                        style="color: #F1C40F; font-family: 'Georgia', serif; font-size: 20px; font-weight: 700; margin: 0 0 10px 0; text-shadow: 1px 1px 0px #6C5CE7;">
                         Can I request additional accommodations?</h3>
                     <p
-                        style="color: white; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 16px; margin: 0; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px #C0392B;">
+                        style="color: white; font-family: 'Georgia', serif; font-size: 16px; margin: 0; line-height: 1.6; font-weight: 500; text-shadow: 1px 1px 0px #6C5CE7;">
                         Absolutely! We will be providing closed captioning, expect our speakers to provide additional
                         accessible resources, and have multiple methods of interacting with our event through Discord.
                         However, we can always do better! We encourage you to inform us through our registration,
                         volunteer form, or via email as soon as possible so we can incorporate your needs and continue
                         shaping the environment toward a more inclusive future for all! If you have any questions reach
                         out to us at team@sunhacks.io</p>
+                </div>
+            </div>
+            
+            <!-- Love from SunHacks Team -->
+            <div style="text-align: center; margin-top: 40px; padding-top: 30px; border-top: 2px solid rgba(192, 192, 192, 0.6);">
+                <p
+                    style="color: white; font-family: 'Times New Roman', serif; font-size: 20px; margin: 0 0 25px 0; font-weight: 600; text-shadow: 1px 1px 0px rgba(0,0,0,0.5);">
+                    ❤️ Love from the SunHacks Team ❤️
+                </p>
+                
+                <!-- Social Links -->
+                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                    <a href="https://discord.gg/sunhacks" target="_blank"
+                        style="display: inline-block; background: rgba(255, 255, 255, 0.2); color: white; padding: 15px 25px; border-radius: 20px; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 16px; font-weight: 600; transition: all 0.3s ease; border: 2px solid rgba(192, 192, 192, 0.8); backdrop-filter: blur(5px);">
+                        Discord
+                    </a>
+                    <a href="https://instagram.com/sunhacks" target="_blank"
+                        style="display: inline-block; background: rgba(255, 255, 255, 0.2); color: white; padding: 15px 25px; border-radius: 20px; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 16px; font-weight: 600; transition: all 0.3s ease; border: 2px solid rgba(192, 192, 192, 0.8); backdrop-filter: blur(5px);">
+                        Instagram
+                    </a>
+                    <a href="https://twitter.com/sunhacks" target="_blank"
+                        style="display: inline-block; background: rgba(255, 255, 255, 0.2); color: white; padding: 15px 25px; border-radius: 20px; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 16px; font-weight: 600; transition: all 0.3s ease; border: 2px solid rgba(192, 192, 192, 0.8); backdrop-filter: blur(5px);">
+                        Twitter
+                    </a>
+                    <a href="https://linkedin.com/company/sunhacks" target="_blank"
+                        style="display: inline-block; background: rgba(255, 255, 255, 0.2); color: white; padding: 15px 25px; border-radius: 20px; text-decoration: none; font-family: 'Times New Roman', serif; font-size: 16px; font-weight: 600; transition: all 0.3s ease; border: 2px solid rgba(192, 192, 192, 0.8); backdrop-filter: blur(5px);">
+                        LinkedIn
+                    </a>
                 </div>
             </div>
         </div>

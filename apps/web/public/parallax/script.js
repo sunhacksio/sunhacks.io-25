@@ -325,3 +325,55 @@ gsap.fromTo("#faq-section",
 //     var cursorPt = pt.matrixTransform(svg.getScreenCTM().inverse());
 //     return { x: Math.floor(cursorPt.x), y: Math.floor(cursorPt.y) }
 // }
+
+// Mouse Trail with Cute Cactus Shapes
+let mouseTrail = [];
+const maxTrailLength = 8;
+
+function createCactusTrail(x, y) {
+    const cactus = document.createElement('div');
+    cactus.className = 'cactus-trail';
+    cactus.style.left = x + 'px';
+    cactus.style.top = y + 'px';
+    document.body.appendChild(cactus);
+    
+    // Add animation class
+    setTimeout(() => {
+        cactus.classList.add('animate');
+    }, 10);
+    
+    // Remove cactus after animation
+    setTimeout(() => {
+        if (cactus.parentNode) {
+            cactus.parentNode.removeChild(cactus);
+        }
+    }, 600);
+    
+    return cactus;
+}
+
+function handleMouseMove(e) {
+    const cactus = createCactusTrail(e.clientX - 10, e.clientY - 10);
+    mouseTrail.push(cactus);
+    
+    // Limit trail length
+    if (mouseTrail.length > maxTrailLength) {
+        const oldCactus = mouseTrail.shift();
+        if (oldCactus && oldCactus.parentNode) {
+            oldCactus.parentNode.removeChild(oldCactus);
+        }
+    }
+}
+
+// Add mouse move event listener
+document.addEventListener('mousemove', handleMouseMove);
+
+// Clean up trail when mouse leaves window
+document.addEventListener('mouseleave', () => {
+    mouseTrail.forEach(cactus => {
+        if (cactus && cactus.parentNode) {
+            cactus.parentNode.removeChild(cactus);
+        }
+    });
+    mouseTrail = [];
+});
