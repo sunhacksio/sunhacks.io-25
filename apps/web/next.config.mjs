@@ -26,6 +26,15 @@ const nextConfig = {
 			allowedOrigins: ["localhost:3000"],
 		},
 	},
+	async redirects() {
+		return [
+			{
+				source: '/',
+				destination: '/parallax.html',
+				permanent: false,
+			},
+		];
+	},
 };
 
 if (process.env.NODE_ENV === "development") {
